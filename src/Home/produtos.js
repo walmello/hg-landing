@@ -1,6 +1,12 @@
 const produtos = [
     {
         id: 1,
+        alt: `
+            Ícone nas cores rosa, verde, roxo e azul, 
+            de um gráfico de barras crescente, com uma seta acima, 
+            com as mesmas cores, indicando o crescimento da performance 
+            do seu marketing digital com o serviço de consultoria da HG.`
+        ,
         title: 'Consultoria em CRO',
         content: [
             /*html*/`
@@ -17,6 +23,14 @@ const produtos = [
     },
     {
         id: 2,
+        alt: `
+            Ícone de um monitor com um megafone dentro e 
+            3 balões de fala acima, nas cores rosa, verde, roxo
+            e azul, indicando que sua empresa será conhecida e 
+            falada por todos com o nosso serviço de 
+            otimização de campanhas de marketing.
+        `
+        ,
         title: 'Otimização de campanhas',
         content: [
             `
@@ -31,6 +45,16 @@ const produtos = [
     },
     {
         id: 3,
+        alt: `
+            Ícone de um funil na cor roxa, 
+            onde na parte de cima há 3 pessoas e na 
+            parte de baixo uma moeda rosa com o cifrão, 
+            indicando que com o serviço de CRO e otimização de 
+            testes A/B da Hacking Growth, 
+            o seu marketing digital passa a atingir 
+            mais pessoas e gerar mais receita.
+        `
+        ,
         title: 'CRO e otimização de Testes A/B',
         content: [
             /*html*/`
@@ -59,16 +83,19 @@ const produtos = [
 
 const paragraphs = each => each.map(p => `<p>${p}<p>`).join('')
 
-const produto = id => title => content => /*html*/`
+const produto = p => /*html*/`
 	<div>
 		<div>
-			<img src="static/img/produtos/${id}.svg" alt="Ícone nas cores rosa, verde, roxo e azul, de um gráfico de barras crescente, com uma seta acima, com as mesmas cores, indicando o crescimento da performance do seu marketing digital com o serviço de consultoria da HG." class="fade-in">
-			<h3>${title}</h3>
+            <img 
+                src="static/img/produtos/${id}.svg" 
+                alt="${p.alt}"
+            >
+			<h3>${p.title}</h3>
 			<div>
-                ${paragraphs(content)}
+                ${paragraphs(p.content)}
 			</div>
 			<div>
-				<a href=""  class="btn">Saiba mais</a>				
+				<a href="" class="btn">Saiba mais</a>				
 			</div>
         </div>
     </div>
@@ -76,6 +103,6 @@ const produto = id => title => content => /*html*/`
 
 module.exports = /*html*/`
     <section id="product-bundle" class="row">
-        ${produtos.map(p => produto(p.id)(p.title)(p.content)).join('')}
+        ${produtos.map(p => produto(p)).join('')}
 	</section>
 `
