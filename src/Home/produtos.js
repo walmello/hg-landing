@@ -95,7 +95,7 @@ const produto = p => /*html*/`
                 ${paragraphs(p.content)}
 			</div>
 			<div>
-				<a href="" class="btn">Saiba mais</a>				
+				<a href="#" class="btn">Saiba mais</a>				
 			</div>
         </div>
     </div>
