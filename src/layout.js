@@ -16,8 +16,29 @@ module.exports = /*html*/`<!DOCTYPE html>
         </script>
         -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="static/css/style.css">
         <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
+        <style>
+            :root{
+                --pink: #FB358C;
+                --cyan: #1CFAD5;
+                --violet: #7958C3;
+                --blue: #06B3F5;
+                --light: #eee;
+                --dark: #092342;
+                --darkt: #092342dd;
+                --gradient: linear-gradient(to right, var(--pink), var(--cyan), var(--violet), var(--blue));
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <!--
