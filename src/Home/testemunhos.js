@@ -42,7 +42,7 @@ const testemunhos = [
         content: `… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!`
 	}
 ].map(e => /*html*/`
-    <img src="${e.img}">
+    <img src="${e.img}" alt="${e.alt}">
     <h3><em>${e.nome}</em></h3>
     <h4>${e.titulo}</h4>
     <p>

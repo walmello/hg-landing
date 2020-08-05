@@ -2,7 +2,6 @@ const pages = (...arr) => arr.map(p => page(`Home/${p}`)).join('')
 const Homepages = pages(
     'tripwire',
     'produtos',
-    'clientes',
     'parceiros',
     'contadores',
     'testemunhos',
