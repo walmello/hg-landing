@@ -9,12 +9,12 @@ const produtos = [
         ,
         title: 'Consultoria em CRO',
         content: [
-            /*html*/`
+            `
                 Sua taxa crescimento está boa, 
                 mas você sabe que <strong>poderia ser melhor</strong>? 
                 Não entende o porquê de seus resultados 
                 não serem os esperados?`,
-            /*html*/`
+            `
                 Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
                 entram em ação para fazer um pente fino em 
                 <strong>todo o seu processo de vendas</strong>
@@ -36,7 +36,7 @@ const produtos = [
             `
                 Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
             `,
-            /*html*/`
+            `
                 Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
                 entram em ação para fazer um pente fino em 
                 <strong>todo o seu processo de vendas</strong>
@@ -57,52 +57,48 @@ const produtos = [
         ,
         title: 'CRO e otimização de Testes A/B',
         content: [
-            /*html*/`
+            `
                 Sua taxa crescimento está boa, 
                 mas você sabe que <strong>poderia ser melhor</strong>? 
                 Não entende o porquê de seus resultados 
                 não serem os esperados?`,
-            /*html*/`
+            `
                 Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
                 entram em ação para fazer um pente fino em 
                 <strong>todo o seu processo de vendas</strong>
             `,
-            /*html*/`
+            `
                 Com os testes A/B encontramos os principais fatores 
                 que não fazem a sua campanha alcançar os resultados esperados. 
                 Analisamos o desempenho e definimos qual é a 
                 melhor estratégia para o seu anúncio.
             `,
-            /*html*/`
+            `
                 Aumente hoje mesmo a escalabilidade de seus negócios! 
                 Conheça nosso processo clicando abaixo.
             `       
         ]
     }
-]
-
-const paragraphs = each => each.map(p => `<p>${p}<p>`).join('')
-
-const produto = p => /*html*/`
-	<div>
+].map(p => /*html*/`
+    <div>
 		<div>
             <img 
-                src="static/img/produtos/${id}.svg" 
+                src="static/img/produtos/${p.id}.svg" 
                 alt="${p.alt}"
             >
 			<h3>${p.title}</h3>
 			<div>
-                ${paragraphs(p.content)}
+                ${p.content.map(p => '<p>' + p + '<p>').join('')}
 			</div>
 			<div>
 				<a href="#" class="btn">Saiba mais</a>				
 			</div>
         </div>
     </div>
-`
+`).join('')
 
 module.exports = /*html*/`
     <section id="product-bundle" class="row">
-        ${produtos.map(p => produto(p)).join('')}
+        ${produtos}
 	</section>
 `
