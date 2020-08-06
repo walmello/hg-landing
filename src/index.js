@@ -8,7 +8,7 @@ const Homepages = pages(
     'faq'
 )
 
-module.exports = /**/`
+module.exports = `
     ${page('navbar')}
     ${page('Home/header')}
     <main>

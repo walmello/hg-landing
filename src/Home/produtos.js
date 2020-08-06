@@ -91,7 +91,7 @@ const produtos = [
                 ${p.content.map(p => '<p>' + p + '<p>').join('')}
 			</div>
 			<div>
-				<a href="#" class="btn">Saiba mais</a>				
+				<a href="#" class="">Saiba mais</a>				
 			</div>
         </div>
     </div>
