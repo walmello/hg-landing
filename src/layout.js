@@ -19,6 +19,8 @@ module.exports = content => /*html*/`
         <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
         <style>
         </style>
+        <link rel="stylesheet" href="static/layout.css">
+        <link rel="stylesheet" href="static/style.css">
     </head>
     <body>
         <!--
