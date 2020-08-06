@@ -34,6 +34,9 @@ const elements = {
         .w-10rem {
             width: 10rem;
         }
+        .w-15rem {
+            width: 15rem;
+        }
     `,
     bg: /*css*/`
         .bg-dark-t {
@@ -78,6 +81,9 @@ const elements = {
     tx: /*css*/`
         .tx-center {
             text-align: center;
+        }
+        .tx-left {
+            text-align: left;
         }
         .tx-1rem {
             font-size: 1rem;
@@ -186,6 +192,10 @@ const elements = {
         },
         .cursor {
             cursor: pointer;
+        },
+        .box {
+            width: 3rem;
+            height: 3rem;
         }
     `
 }
