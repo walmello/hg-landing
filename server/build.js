@@ -1,22 +1,9 @@
-/*
-
-const { writeFileSync } = require('fs')
-global.page = name => reload(`../src/${name}.js`)
-
-module.exports = () => {
-    const { style, template } = page('layout')
-    console.log('build alterado')
-    writeFileSync('index.html', template)
-}
-
-*/
-
-const { writeFileSync } = require('fs')
-const { style } = require('../src/layout')
+const { readFileSync , writeFileSync } = require('fs')
 const { html_beautify } = require('js-beautify')
+style = readFileSync('static/style.css','utf-8')
 
 global.page = name => require(`../src/${name}`)
-const layout = page('layout')(page('index'))
+const layout = page('layout')(style)
 
 const html = html_beautify(layout, {indent_size: 4 })
 writeFileSync('index.html', html)

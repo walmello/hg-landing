@@ -1,4 +1,4 @@
-module.exports = content => /*html*/`
+module.exports = style => /*html*/`
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -18,29 +18,7 @@ module.exports = content => /*html*/`
         -->
         <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
         <style>
-            @font-face {
-                font-family: 'Montserrat';
-                font-style: italic;
-                src: url('static/fonts/Montserrat/Montserrat-Italic.ttf') format("truetype");    
-                font-display: swap;
-            }
-
-            @font-face {
-                font-family: 'Montserrat';
-                src: url('static/fonts/Montserrat/Montserrat-Regular.ttf') format("truetype");    
-                font-display: swap;
-            }
-
-            @font-face {
-                font-family: 'Montserrat';
-                src: url('static/fonts/Montserrat/Montserrat-Bold.ttf');
-                font-weight: bold;
-                font-display: swap;
-            }
-
-            html {
-                font-family: 'Montserrat';
-            }
+            ${style}
         </style>
     </head>
     <body>
@@ -51,7 +29,7 @@ module.exports = content => /*html*/`
         </noscript>
         -->
         <!-- End Google Tag Manager (noscript) -->   
-        ${content}
+        ${page('index')}
     </body>
 </html>
 `
