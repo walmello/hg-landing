@@ -1,6 +1,6 @@
 const { readFileSync , writeFileSync } = require('fs')
 const { html_beautify } = require('js-beautify')
-style = readFileSync('static/style.css','utf-8')
+const style = readFileSync('static/style.css','utf-8')
 
 global.page = name => require(`../src/${name}`)
 const layout = page('layout')(style)
