@@ -1,4 +1,4 @@
-module.exports = style => /*html*/`
+module.exports = style => scripts => /*html*/`
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -31,6 +31,9 @@ module.exports = style => /*html*/`
         -->
         <!-- End Google Tag Manager (noscript) -->   
         ${page('index')}
+        <script>
+            ${scripts}
+        </script>
     </body>
 </html>
 `

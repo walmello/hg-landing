@@ -24,13 +24,13 @@
             display: none;
         }
 
-        @media(max-width: 500px) {
+        @media(max-width: 1000px) {
             .mobile {
                 display: initial;
             }
         }
 
-        @media(min-width: 500px) {
+        @media(min-width: 1000px) {
             .desktop {
                 display: initial;
             }
@@ -78,8 +78,9 @@
 
         html {
             font-family: 'Montserrat';
+            text-align: center;
+            font-size: 80%;
         }
-
 
 
         .h-4rem {
@@ -88,6 +89,10 @@
 
         .h-100 {
             height: 100%;
+        }
+
+        .h-100v {
+            height: 100vh;
         }
 
         .w-100v {
@@ -110,8 +115,88 @@
             width: 4rem;
         }
 
+        .w-8rem {
+            width: 8rem;
+        }
+
+        .w-10rem {
+            width: 10rem;
+        }
+
         .bg-dark-t {
             background-color: var(--darkt);
+        }
+
+        .bg-dark {
+            background-color: var(--dark);
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-header {
+            background: url('static/img/bg/header.jpg');
+            background-size: 300vw;
+            background-position: 65%;
+        }
+
+        .bg-primary {
+            background-color: var(--pink);
+        }
+
+        @media(min-width: 500px) {
+            .bg-header {
+                background-size: 150vw;
+                background-position: 50%;
+            }
+        }
+
+        @media(min-width: 1000px) {
+            .bg-header {
+                background-size: 120vw;
+                background-position: 0;
+            }
+        }
+
+        .c-primary {
+            color: var(--pink);
+        }
+
+        .c-white {
+            color: white;
+        }
+
+        .tx-center {
+            text-align: center;
+        }
+
+        .tx-1rem {
+            font-size: 1rem;
+        }
+
+        .tx-2rem {
+            font-size: 2rem;
+        }
+
+        .tx-3rem {
+            font-size: 3rem;
+        }
+
+        .tx-4rem {
+            font-size: 4rem;
+        }
+
+        .tx-d-none {
+            text-decoration: none;
+        }
+
+        .tx-bold {
+            font-weight: bold;
+        }
+
+        .tx-upper {
+            text-transform: uppercase;
         }
 
         .m-0 {
@@ -120,6 +205,10 @@
 
         .p-0 {
             padding: 0;
+        }
+
+        .p-05rem {
+            padding: 0.5rem;
         }
 
         .p-1rem {
@@ -131,12 +220,24 @@
             padding-right: 1rem
         }
 
+        .p-2rem {
+            padding: 2rem;
+        }
+
         .fixed {
             position: fixed;
         }
 
+        .absolute {
+            position: absolute;
+        }
+
         .top {
             top: 0;
+        }
+
+        .right {
+            right: 0;
         }
 
         .flx {
@@ -147,8 +248,45 @@
             justify-content: space-between;
         }
 
+        .flx-col {
+            flex-direction: column;
+        }
+
+        .j-center {
+            justify-content: center;
+        }
+
+        .a-center {
+            align-items: center;
+        }
+
+        .br-rad-1rem {
+            border-radius: 1rem;
+        }
+
+        .ul-none {
+            list-style: none;
+        }
+
+        .li-p-1rem>* {
+            padding: 1rem
+        }
+
+        .block {
+            display: block;
+        }
+
+        .none {
+            display: none;
+        }
+
         .brd-box {
             box-sizing: border-box;
+        }
+
+        ,
+        .cursor {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -163,26 +301,50 @@
     <!-- End Google Tag Manager (noscript) -->
 
 
-    <nav class="h-4rem bg-dark-t fixed w-100v p-1rem px-1 top flx j-between brd-box">
-        <div>
-            <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+    <nav class="h-4rem bg-dark-t fixed w-100v p-05rem top flx j-between brd-box">
+        <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+        <div class="mobile">
+            <div id="menuOff">
+                <img class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+            </div>
+            <div id="menuOn" class="none">
+                <div class="flx li-none c-white bg-dark absolute right top m-0 p-1rem">
+                    <ul class="ul-none p-0 li-p-1rem tx-upper tx-bold w-10rem p-1rem">
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                    </ul>
+                    <img class="h-100 w-3rem" src="static/img/x.svg" alt="Ícone para fechar o menu">
+                </div>
+            </div>
         </div>
-        <div>
-            <img class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+        <div class="desktop ">
+            <div class="flx a-center">
+                <ul class="flx a-center p-0 ul-none c-white li-p-1rem tx-upper tx-bold">
+                    <li>Home</li>
+                    <li>Nossos Serviços</li>
+                    <li>Cases de sucesso</li>
+                    <li>Quem Somos</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 
-    <header id="promessa">
-        <h1>
+    <header id="promessa" class="bg-header c-white flx flx-col j-center h-100v p-2rem">
+        <h1 class="tx-3rem">
             Otimize seu marketing digital
-            <span>e aumente a taxa de conversão do seu negócio</span>
+            <span class="block c-primary tx-2rem">e aumente a taxa de conversão do seu negócio</span>
         </h1>
         <h2>Conheça nossas soluções
             <strong>de marketing</strong> <br> baseadas em
             <strong>inteligência, otimização e dados.</strong>
         </h2>
-        <a class="" href="#">Fale agora mesmo com um especialista</a>
+        <a class="bg-primary p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold" href="#">Fale agora mesmo com um especialista</a>
     </header>
 
     <main>
@@ -595,6 +757,22 @@
     </footer>
 
 
+    <script>
+        $ = query => document.querySelector(query)
+
+        const menuOff = $('#menuOff')
+        const menuOn = $('#menuOn')
+
+        $('#menuOff').onclick = () => {
+            menuOff.style.display = 'none'
+            menuOn.style.display = 'block'
+        }
+
+        $('#menuOn').onclick = () => {
+            menuOff.style.display = 'block'
+            menuOn.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
