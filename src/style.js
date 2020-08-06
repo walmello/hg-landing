@@ -1,31 +1,27 @@
-
-const background = name => "url('static/img/bg/header.jpg')"
-
-const header = {
-    background: background('header'),
-    color: 'white',
-    'background-size': '200%'   
-}  
-
-const apply = tag => element =>  `${tag} ` + '{\n' +
-    Object.keys(element).map(i => `  ${i}: ${element[i]}`).join(';\n')
-+ "\n}\n"
-
-console.log(apply('header')(header))
-
-global.cssGroup = {
-    navbar: 'h-4 bg-dark-t fixed w-100 p-0 m-0 top'
-}
-
 const elements = {
     h: /*css*/`
-        .h-4 {
+        .h-4rem {
             height: 4rem;
+        }
+        .h-100 {
+            height: 100%;
         }
     `,
     w: /*css*/`
-        .w-100 {
+        .w-100v {
             width: 100vw;
+        }
+        .w-100 {
+            width: 100%;
+        }
+        .w-2rem {
+            width: 2rem;
+        }
+        .w-3rem {
+            width: 3rem;
+        }
+        .w-4rem {
+            width: 4rem;
         }
     `,
     bg: /*css*/`
@@ -42,6 +38,13 @@ const elements = {
         .p-0 {
             padding: 0;
         }
+        .p-1rem {
+            padding: 1rem;
+        }
+        .px-1rem {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
     `,
     pos: /*css*/`
         .fixed {
@@ -51,6 +54,19 @@ const elements = {
         .top {
             top: 0;
         } 
+    `,
+    flx: /*css*/`
+        .flx {
+            display: flex;
+        }
+        .j-between {
+            justify-content: space-between;
+        }
+    `,
+    misc: /*css*/`
+        .brd-box {
+            box-sizing: border-box;
+        }
     `
 }
 

@@ -80,45 +80,34 @@
             font-family: 'Montserrat';
         }
 
-        body {
-            margin: 0;
-        }
 
-        .h-4 {
+
+        .h-4rem {
             height: 4rem;
         }
 
-        .bg-dark-t {
-            background-color: var(--darkt);
+        .h-100 {
+            height: 100%;
         }
 
-        .w-100 {
+        .w-100v {
             width: 100vw;
         }
 
-        .m-0 {
-            margin: 0;
-        }
-
-        .p-0 {
-            padding: 0;
-        }
-
-        .fixed {
-            position: fixed;
-        }
-
-        .top {
-            top: 0;
-        }
-
-
-        .h-4 {
-            height: 4rem;
-        }
-
         .w-100 {
-            width: 100vw;
+            width: 100%;
+        }
+
+        .w-2rem {
+            width: 2rem;
+        }
+
+        .w-3rem {
+            width: 3rem;
+        }
+
+        .w-4rem {
+            width: 4rem;
         }
 
         .bg-dark-t {
@@ -133,17 +122,38 @@
             padding: 0;
         }
 
+        .p-1rem {
+            padding: 1rem;
+        }
+
+        .px-1rem {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
         .fixed {
             position: fixed;
         }
 
         .top {
             top: 0;
+        }
+
+        .flx {
+            display: flex;
+        }
+
+        .j-between {
+            justify-content: space-between;
+        }
+
+        .brd-box {
+            box-sizing: border-box;
         }
     </style>
 </head>
 
-<body>
+<body class="m-0">
     <!--
         <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDL6CBM"
@@ -153,12 +163,12 @@
     <!-- End Google Tag Manager (noscript) -->
 
 
-    <nav class="h-4 bg-dark-t fixed w-100 p-0 m-0 top">
+    <nav class="h-4rem bg-dark-t fixed w-100v p-1rem px-1 top flx j-between brd-box">
         <div>
-            <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+            <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
         </div>
         <div>
-            <img class="" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+            <img class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
         </div>
     </nav>
 

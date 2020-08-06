@@ -22,7 +22,7 @@ module.exports = style => /*html*/`
             ${page('style')}
         </style>
     </head>
-    <body>
+    <body class="m-0">
         <!--
         <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDL6CBM"
