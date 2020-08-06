@@ -16,9 +16,7 @@ module.exports = content => /*html*/`
         })(window,document,'script','dataLayer','GTM-TDL6CBM');
         </script>
         -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <style>
         </style>
     </head>
