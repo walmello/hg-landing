@@ -1,0 +1,15 @@
+.mobile, .tablet, .desktop {
+    display: none;
+}
+
+@media(max-width: 500px){
+    .mobile {
+        display: initial;
+    }
+}
+
+@media(min-width: 500px){
+    .desktop {
+        display: initial;
+    }
+}

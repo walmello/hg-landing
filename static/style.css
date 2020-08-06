@@ -1,3 +1,14 @@
+:root{
+	--pink: #FB358C;
+	--cyan: #1CFAD5;
+	--violet: #7958C3;
+	--blue: #06B3F5;
+	--light: #eee;
+	--dark: #092342;
+	--darkt: #092342dd;
+	--gradient: linear-gradient(to right, var(--pink), var(--cyan), var(--violet), var(--blue));
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: italic;
@@ -18,8 +29,38 @@
     font-display: swap;
 }
 
-
-
 html {
     font-family: 'Montserrat';
+}
+
+body {
+    margin: 0;
+}
+
+.h-4 {
+    height: 4rem;
+}
+
+.bg-dark-t {
+    background-color: var(--darkt);
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.top {
+    top: 0;
 }

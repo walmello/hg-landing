@@ -18,6 +18,44 @@
         -->
     <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
     <style>
+        .mobile,
+        .tablet,
+        .desktop {
+            display: none;
+        }
+
+        @media(max-width: 500px) {
+            .mobile {
+                display: initial;
+            }
+        }
+
+        @media(min-width: 500px) {
+            .desktop {
+                display: initial;
+            }
+        }
+
+        /*
+
+@media(min-width: 1000px){
+    html {
+        background-color: red;
+    }
+}
+
+*/
+        :root {
+            --pink: #FB358C;
+            --cyan: #1CFAD5;
+            --violet: #7958C3;
+            --blue: #06B3F5;
+            --light: #eee;
+            --dark: #092342;
+            --darkt: #092342dd;
+            --gradient: linear-gradient(to right, var(--pink), var(--cyan), var(--violet), var(--blue));
+        }
+
         @font-face {
             font-family: 'Montserrat';
             font-style: italic;
@@ -38,10 +76,69 @@
             font-display: swap;
         }
 
-
-
         html {
             font-family: 'Montserrat';
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .h-4 {
+            height: 4rem;
+        }
+
+        .bg-dark-t {
+            background-color: var(--darkt);
+        }
+
+        .w-100 {
+            width: 100vw;
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .top {
+            top: 0;
+        }
+
+
+        .h-4 {
+            height: 4rem;
+        }
+
+        .w-100 {
+            width: 100vw;
+        }
+
+        .bg-dark-t {
+            background-color: var(--darkt);
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .p-0 {
+            padding: 0;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .top {
+            top: 0;
         }
     </style>
 </head>
@@ -56,7 +153,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
 
-    <nav class="">
+    <nav class="h-4 bg-dark-t fixed w-100 p-0 m-0 top">
         <div>
             <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
         </div>

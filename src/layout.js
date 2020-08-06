@@ -19,6 +19,7 @@ module.exports = style => /*html*/`
         <meta name="description" content="Marketing digital voltado para aumentar a taxa de conversão do seu negócio. Oferecemos soluções baseadas em inteligência, otimização e dados.">
         <style>
             ${style}
+            ${page('style')}
         </style>
     </head>
     <body>
