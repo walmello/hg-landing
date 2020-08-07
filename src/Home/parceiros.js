@@ -44,7 +44,12 @@ const imagens = [
         `
     }
 ].map(i => /*html*/`
-    <img src="static/img/parceiros/${i.img}.svg" alt="${i.alt}">
+    <div class="bg-red">
+        <img 
+            src="static/img/parceiros/${i.img}.svg" 
+            alt="${i.alt}"
+        >
+    </div>
 `).join('')
 
 module.exports = /*html*/`
