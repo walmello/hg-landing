@@ -1,4 +1,4 @@
-const header = "bg-dark c-white flx flx-col j-center h-100v p-2rem"
+const header = "bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center"
 const span = "block c-primary tx-75"
 
 module.exports = 
