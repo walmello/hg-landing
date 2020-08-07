@@ -1,4 +1,4 @@
-const header = "bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center"
+const header = "bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG"
 const span = "block c-primary tx-75"
 
 module.exports = 
@@ -13,8 +13,11 @@ module.exports =
             <strong>de marketing</strong> <br> baseadas em 
             <strong>inteligência, otimização e dados.</strong>
         </h2>
-		<div class="p-1rem flx j-center">
+		<div class="p-1rem flx">
+			
+		</div>
+		<p>
 			<a class="${button}" href="#">Fale agora mesmo com um especialista</a>
-		</div>		
+		</p>			
 </header>
 `

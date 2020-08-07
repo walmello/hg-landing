@@ -8,9 +8,16 @@ const Homepages = pages(
     'faq'
 )
 
-module.exports = `
-    ${page('navbar')}
-    ${page('Home/header')}
+module.exports = /*html*/`
+    <div class="flxLG flx-grow">
+        <div>
+            ${page('Home/social')}
+        </div>
+        <div>
+            ${page('navbar')}
+            ${page('Home/header')}
+        </div>
+    </div>
     <main>
         ${Homepages}
     </main>

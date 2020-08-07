@@ -1,4 +1,4 @@
-global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem block'
+global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem inline-block'
 
 const elements = {
     h: /*css*/`
@@ -10,6 +10,9 @@ const elements = {
         }
         .h-100v {
             height: 100vh;
+        }
+        .h-85v {
+            height: 85vh;
         }
     `,
     w: /*css*/`
@@ -118,6 +121,11 @@ const elements = {
         .tx-75 {
             font-size: 75%;
         }
+        @media(min-width: 1000px){
+            .tx-leftLG{
+                text-align: left;
+            }
+        }
     `,
     m: /*css*/`
         .m-0 {
@@ -166,6 +174,21 @@ const elements = {
     flx: /*css*/`
         .flx {
             display: flex;
+        }
+        @media(min-width: 1000px){
+            .flxLG{
+                display: flex;
+            }
+            .j-leftLG{
+                justify-content: start;
+                background-color: red;
+            }
+        }
+        .flx-grow > * {
+            flex-grow: 1;
+        }
+        .j-center {
+            justify-content: center;
         }
         .j-between {
             justify-content: space-between;

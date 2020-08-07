@@ -24,13 +24,13 @@
             display: none;
         }
 
-        @media(max-width: 700px) {
+        @media(max-width: 1000px) {
             .mobile {
                 display: initial;
             }
         }
 
-        @media(min-width: 700px) {
+        @media(min-width: 1000px) {
             .desktop {
                 display: initial;
             }
@@ -91,6 +91,10 @@
 
         .h-100v {
             height: 100vh;
+        }
+
+        .h-85v {
+            height: 85vh;
         }
 
         .w-100v {
@@ -221,6 +225,12 @@
             font-size: 75%;
         }
 
+        @media(min-width: 1000px) {
+            .tx-leftLG {
+                text-align: left;
+            }
+        }
+
         .m-0 {
             margin: 0;
         }
@@ -268,6 +278,25 @@
 
         .flx {
             display: flex;
+        }
+
+        @media(min-width: 1000px) {
+            .flxLG {
+                display: flex;
+            }
+
+            .j-leftLG {
+                justify-content: start;
+                background-color: red;
+            }
+        }
+
+        .flx-grow>* {
+            flex-grow: 1;
+        }
+
+        .j-center {
+            justify-content: center;
         }
 
         .j-between {
@@ -344,41 +373,50 @@
         -->
     <!-- End Google Tag Manager (noscript) -->
 
+    <div class="flxLG flx-grow">
+        <div>
 
-    <nav>
-        <div class="mobile">
-            <div class="h-4rem bg-dark-t fixed w-100v p-05rem top flx j-between brd-box">
-                <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-                <img id="menuOff" class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
-                <div id="menuOn" class="none">
-                    <div class="flx bg-dark-t c-white absolute top right p-1rem">
-                        <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
-                            <li>Home</li>
-                            <li>Nossos Serviços</li>
-                            <li>Cases de sucesso</li>
-                            <li>Quem Somos</li>
-                            <li>Trabalhe conosco</li>
-                        </ul>
-                        <img class="h-100 w-3rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+            AAAAA
+            <!--
+    <ul class="h-4rem m-0 bg-dark fixed w-100v p-05rem bottom flx j-around a-center ul-none brd-box brt-c-primary c-white">
+        <li>F</li>
+        <li>L</li>
+        <li>T</li>
+    </ul>
+    -->
+
+        </div>
+        <div>
+
+            <nav>
+                <div class="mobile">
+                    <div class="h-4rem bg-dark-t fixed w-100v p-05rem top flx j-between brd-box">
+                        <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+                        <img id="menuOff" class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+                        <div id="menuOn" class="none">
+                            <div class="flx bg-dark-t c-white absolute top right p-1rem">
+                                <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
+                                    <li>Home</li>
+                                    <li>Nossos Serviços</li>
+                                    <li>Cases de sucesso</li>
+                                    <li>Quem Somos</li>
+                                    <li>Trabalhe conosco</li>
+                                </ul>
+                                <img class="h-100 w-3rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <ul class="h-4rem m-0 bg-dark fixed w-100v p-05rem bottom flx j-around a-center ul-none brd-box brt-c-primary c-white">
-                <li>F</li>
-                <li>L</li>
-                <li>T</li>
-            </ul>
-        </div>
-        <div class="desktop">
-            <div class="bg-dark flx p-2rem">
-                <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-                <div>
+                <div class="desktop">
+                    <div class="bg-dark flx p-2rem">
+                        <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+                        <div>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <nav>
-            <!--
+                <nav>
+                    <!--
 <nav class="undefined">
     <div>
         <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
@@ -446,92 +484,97 @@
     </div>
     -->
 
-        </nav>
+                </nav>
 
 
-        <header id="promessa" class="bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center">
-            <h1 class="tx-2rem">
-                Otimize seu marketing digital
-                <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
-            </h1>
-            <h2 class="tx-1rem">
-                Conheça nossas soluções
-                <strong>de marketing</strong> <br> baseadas em
-                <strong>inteligência, otimização e dados.</strong>
-            </h2>
-            <div class="p-1rem flx j-center">
-                <a class="bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem block" href="#">Fale agora mesmo com um especialista</a>
+                <header id="promessa" class="bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG">
+                    <h1 class="tx-2rem">
+                        Otimize seu marketing digital
+                        <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
+                    </h1>
+                    <h2 class="tx-1rem">
+                        Conheça nossas soluções
+                        <strong>de marketing</strong> <br> baseadas em
+                        <strong>inteligência, otimização e dados.</strong>
+                    </h2>
+                    <div class="p-1rem flx">
+
+                    </div>
+                    <p>
+                        <a class="bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem inline-block" href="#">Fale agora mesmo com um especialista</a>
+                    </p>
+                </header>
+
+        </div>
+    </div>
+    <main>
+
+        <section id="tripwire">
+            <div class="fade-left">
+                <h2><strong>Seu negócio</strong> foi afetado pela crise?</h2>
+                <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
+                <a class="" href="#">Quero saber mais</a>
             </div>
-        </header>
+        </section>
 
-        <main>
+        <section id="product-bundle" class="row">
 
-            <section id="tripwire">
-                <div class="fade-left">
-                    <h2><strong>Seu negócio</strong> foi afetado pela crise?</h2>
-                    <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
-                    <a class="" href="#">Quero saber mais</a>
-                </div>
-            </section>
-
-            <section id="product-bundle" class="row">
-
+            <div>
                 <div>
-                    <div>
-                        <img src="static/img/produtos/1.svg" alt="
+                    <img src="static/img/produtos/1.svg" alt="
             Ícone nas cores rosa, verde, roxo e azul, 
             de um gráfico de barras crescente, com uma seta acima, 
             com as mesmas cores, indicando o crescimento da performance 
             do seu marketing digital com o serviço de consultoria da HG.">
-                        <h3>Consultoria em CRO</h3>
-                        <div>
-                            <p>
-                                Sua taxa crescimento está boa,
-                                mas você sabe que <strong>poderia ser melhor</strong>?
-                                Não entende o porquê de seus resultados
-                                não serem os esperados?
-                            <p>
-                            <p>
-                                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
-                                entram em ação para fazer um pente fino em
-                                <strong>todo o seu processo de vendas</strong>
-                            <p>
-                        </div>
-                        <div>
-                            <a href="#" class="">Saiba mais</a>
-                        </div>
+                    <h3>Consultoria em CRO</h3>
+                    <div>
+                        <p>
+                            Sua taxa crescimento está boa,
+                            mas você sabe que <strong>poderia ser melhor</strong>?
+                            Não entende o porquê de seus resultados
+                            não serem os esperados?
+                        <p>
+                        <p>
+                            Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
+                            entram em ação para fazer um pente fino em
+                            <strong>todo o seu processo de vendas</strong>
+                        <p>
+                    </div>
+                    <div>
+                        <a href="#" class="">Saiba mais</a>
                     </div>
                 </div>
+            </div>
 
+            <div>
                 <div>
-                    <div>
-                        <img src="static/img/produtos/2.svg" alt="
+                    <img src="static/img/produtos/2.svg" alt="
             Ícone de um monitor com um megafone dentro e 
             3 balões de fala acima, nas cores rosa, verde, roxo
             e azul, indicando que sua empresa será conhecida e 
             falada por todos com o nosso serviço de 
             otimização de campanhas de marketing.
         ">
-                        <h3>Otimização de campanhas</h3>
-                        <div>
-                            <p>
-                                Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
-                            <p>
-                            <p>
-                                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
-                                entram em ação para fazer um pente fino em
-                                <strong>todo o seu processo de vendas</strong>
-                            <p>
-                        </div>
-                        <div>
-                            <a href="#" class="">Saiba mais</a>
-                        </div>
+                    <h3>Otimização de campanhas</h3>
+                    <div>
+                        <p>
+                            Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
+                        <p>
+                        <p>
+                            Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
+                            entram em ação para fazer um pente fino em
+                            <strong>todo o seu processo de vendas</strong>
+                        <p>
+                    </div>
+                    <div>
+                        <a href="#" class="">Saiba mais</a>
                     </div>
                 </div>
+            </div>
 
+            <div>
                 <div>
-                    <div>
-                        <img src="static/img/produtos/3.svg" alt="
+                    <img src="static/img/produtos/3.svg" alt="
             Ícone de um funil na cor roxa, 
             onde na parte de cima há 3 pessoas e na 
             parte de baixo uma moeda rosa com o cifrão, 
@@ -540,356 +583,356 @@
             o seu marketing digital passa a atingir 
             mais pessoas e gerar mais receita.
         ">
-                        <h3>CRO e otimização de Testes A/B</h3>
-                        <div>
-                            <p>
-                                Sua taxa crescimento está boa,
-                                mas você sabe que <strong>poderia ser melhor</strong>?
-                                Não entende o porquê de seus resultados
-                                não serem os esperados?
-                            <p>
-                            <p>
-                                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
-                                entram em ação para fazer um pente fino em
-                                <strong>todo o seu processo de vendas</strong>
-                            <p>
-                            <p>
-                                Com os testes A/B encontramos os principais fatores
-                                que não fazem a sua campanha alcançar os resultados esperados.
-                                Analisamos o desempenho e definimos qual é a
-                                melhor estratégia para o seu anúncio.
-                            <p>
-                            <p>
-                                Aumente hoje mesmo a escalabilidade de seus negócios!
-                                Conheça nosso processo clicando abaixo.
-                            <p>
-                        </div>
-                        <div>
-                            <a href="#" class="">Saiba mais</a>
-                        </div>
+                    <h3>CRO e otimização de Testes A/B</h3>
+                    <div>
+                        <p>
+                            Sua taxa crescimento está boa,
+                            mas você sabe que <strong>poderia ser melhor</strong>?
+                            Não entende o porquê de seus resultados
+                            não serem os esperados?
+                        <p>
+                        <p>
+                            Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong>
+                            entram em ação para fazer um pente fino em
+                            <strong>todo o seu processo de vendas</strong>
+                        <p>
+                        <p>
+                            Com os testes A/B encontramos os principais fatores
+                            que não fazem a sua campanha alcançar os resultados esperados.
+                            Analisamos o desempenho e definimos qual é a
+                            melhor estratégia para o seu anúncio.
+                        <p>
+                        <p>
+                            Aumente hoje mesmo a escalabilidade de seus negócios!
+                            Conheça nosso processo clicando abaixo.
+                        <p>
+                    </div>
+                    <div>
+                        <a href="#" class="">Saiba mais</a>
                     </div>
                 </div>
+            </div>
 
-            </section>
+        </section>
 
-            <section id="autoridade">
-                <div>
-                    <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
+        <section id="autoridade">
+            <div>
+                <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
 
-                    <img src="static/img/parceiros/GAMA.svg" alt="
+                <img src="static/img/parceiros/GAMA.svg" alt="
            Gama Academy - Escola altamente reconhecida de 
            desenvolvimento profissional para o 
            mercado digital, com foco em Startups
         ">
 
-                    <img src="static/img/parceiros/DISTRITO.svg" alt="
+                <img src="static/img/parceiros/DISTRITO.svg" alt="
             Distrito - Empresa de inovação e desenvolvimento de Startups
         ">
 
-                    <img src="static/img/parceiros/ABSTATUPS.svg" alt="
+                <img src="static/img/parceiros/ABSTATUPS.svg" alt="
             AbStartups - Associação Brasileira de Startups 
             visa impulsionar o empreendedorismo tecnológico e 
             auxiliar novos profissionais da área
         ">
 
-                    <img src="static/img/parceiros/VALEDOSOL.svg" alt="
+                <img src="static/img/parceiros/VALEDOSOL.svg" alt="
             Vale do Sol - Ecossistema de 
             inovação tecnológica no interior do RJ
         ">
 
-                    <img src="static/img/parceiros/RESULTADOS DIGITAIS.svg" alt="
+                <img src="static/img/parceiros/RESULTADOS DIGITAIS.svg" alt="
             Resultados Digitais - Empresa altamente reconhecida que 
             oferece serviços de marketing digital para 
             empresas de todos os portes, gerando resultados significativos
         ">
 
-                    <img src="static/img/parceiros/SHAWEE.svg" alt="
+                <img src="static/img/parceiros/SHAWEE.svg" alt="
             Shawee - Organizadora de Hackathons (maratonas de programação) 
             on-line com mais de 40.000 pessoas impactadas nos últimos 3 anos.
         ">
 
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contadores">
+        <section id="contadores">
 
-                <div class="fade-in">
-                    <p>217</p>
-                    <h3>Projetos realizados</h3>
-                </div>
+            <div class="fade-in">
+                <p>217</p>
+                <h3>Projetos realizados</h3>
+            </div>
 
-            </section>
+        </section>
 
-            <section id="depoimentos">
-                <h2>Veja algumas opiniões de quem já fechou negócio conosco</h2>
-                <div class="row">
+        <section id="depoimentos">
+            <h2>Veja algumas opiniões de quem já fechou negócio conosco</h2>
+            <div class="row">
 
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF9npZ0RcFWPw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=cTXYrCJbs1fDaC-JwL4oIPtVT2tF0XFmkE_8hMaGmjM" alt="
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF9npZ0RcFWPw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=cTXYrCJbs1fDaC-JwL4oIPtVT2tF0XFmkE_8hMaGmjM" alt="
             Foto de Anderson Kleyton (RevTec - Renomada empresa bioquímica de produtos de limpeza), 
             que está satisfeito com a qualidade dos nossos serviços porque somos diferentes.
         ">
-                    <h3><em>Anderson Kleyton</em></h3>
-                    <h4>Inovação Transformação Digital Indústria 4.0 - RevTec</h4>
-                    <p>
-                        “… oferece serviços aderentes a necessidade de cada cliente. Em um mercado onde a maioria tenta “empurrar goela baixo” seus produtos, este é um diferencial.”
-                    </p>
+                <h3><em>Anderson Kleyton</em></h3>
+                <h4>Inovação Transformação Digital Indústria 4.0 - RevTec</h4>
+                <p>
+                    “… oferece serviços aderentes a necessidade de cada cliente. Em um mercado onde a maioria tenta “empurrar goela baixo” seus produtos, este é um diferencial.”
+                </p>
 
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH_9cKznSa8UA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=M_0QkbyNkZo6B0Ne41n9hnj-GcRqtVtPQDbNc4uqkZA" alt="
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH_9cKznSa8UA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=M_0QkbyNkZo6B0Ne41n9hnj-GcRqtVtPQDbNc4uqkZA" alt="
             Foto de Geisa Luz, que está muito satisfeita com o nosso serviço.
         ">
-                    <h3><em>Geisa Luz</em></h3>
-                    <h4>Consultora em Doenças Raras | Palestrante | Pós doutora em Saúde Pública | Enfermeira</h4>
-                    <p>
-                        “… Já contratei um dos seus serviços … e os resultados foram surpreendentes. Sou muito grata!”
-                    </p>
+                <h3><em>Geisa Luz</em></h3>
+                <h4>Consultora em Doenças Raras | Palestrante | Pós doutora em Saúde Pública | Enfermeira</h4>
+                <p>
+                    “… Já contratei um dos seus serviços … e os resultados foram surpreendentes. Sou muito grata!”
+                </p>
 
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEpP8xjQpch_A/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=FmwCLEz8jrjx-arSGIWxHgHb8YQlHOuCv5uuIvm1RiA" alt="
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEpP8xjQpch_A/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=FmwCLEz8jrjx-arSGIWxHgHb8YQlHOuCv5uuIvm1RiA" alt="
             Foto de Matheus Celestino (Resultados Digitais - Empresa 
             altamente reconhecida que oferece serviços de marketing 
             digital para empresas de todos os portes), 
             que elogia o nosso foco em resultados como 
             uma empresa séria de marketing digital.
         ">
-                    <h3><em>Matheus Celestino</em></h3>
-                    <h4>Executivo de Negócios, Resultados Digitais</h4>
-                    <p>
-                        “… No inicio de 2019, a Hacking Growth Inovação fechou uma parceria estratégica com a Resultados Digitais, e tive o enorme prazer de fazer essa ponte... Uma empresa totalmente focada em entrega e resultado de seus respectivos clientes. Sempre muito focada naquilo que se propõe a entregar.”
-                    </p>
+                <h3><em>Matheus Celestino</em></h3>
+                <h4>Executivo de Negócios, Resultados Digitais</h4>
+                <p>
+                    “… No inicio de 2019, a Hacking Growth Inovação fechou uma parceria estratégica com a Resultados Digitais, e tive o enorme prazer de fazer essa ponte... Uma empresa totalmente focada em entrega e resultado de seus respectivos clientes. Sempre muito focada naquilo que se propõe a entregar.”
+                </p>
 
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFWHshtL6DLMA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=TZ66upwy0cLZvBidZdBlGJarJkFmY2jVZ3xAYp18xbY" alt="
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFWHshtL6DLMA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=TZ66upwy0cLZvBidZdBlGJarJkFmY2jVZ3xAYp18xbY" alt="
             Foto de Renata Costa, que está mais do que satisfeita 
             com o que alcançou com nossos serviços como Growth Hackers.
         ">
-                    <h3><em>Renata Costa</em></h3>
-                    <h4>Gestora e Consultora de Educação a Distância (EaD) l Professora de Tecnologia da Informação l Conteudista de TI</h4>
+                <h3><em>Renata Costa</em></h3>
+                <h4>Gestora e Consultora de Educação a Distância (EaD) l Professora de Tecnologia da Informação l Conteudista de TI</h4>
+                <p>
+                    “… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!”
+                </p>
+
+            </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <dl>
+
+                <dt>O que é Taxa de Conversão?</dt>
+                <dd>
                     <p>
-                        “… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!”
-                    </p>
+                        Diferente da Taxa de Cliques (CTR) de uma página,
+                        a taxa de conversão expressa, em porcentagem,
+                        os visitantes que executaram a ação desejada na página.
+                        Por exemplo: Uma página tem o objetivo de vender um produto
+                        e recebe mensalmente 100 visitas. Destas 100 visitas,
+                        20 compraram o produto, logo, a
+                        Taxa de Conversão desta página é de 20%.
+                    <p>
+                </dd>
 
-                </div>
-                </div>
-            </section>
+                <dt>O que é CRO?</dt>
+                <dd>
+                    <p>
+                        A sigla CRO vem do inglês (Conversion Rate Optimization)
+                        e significa Otimização da Taxa de Conversão.
+                        A CRO tem a função de aumentar a conversão de uma
+                        página na internet, de forma estratégica e sem
+                        gastar tanto, levando o usuário a executar uma ação
+                        dentro do site, que geralmente tem o objetivo de
+                        vender um produto, promover o contato,
+                        ou simplesmente gerar visitas em uma página.
+                        Esta otimização também pode se aplicar a
+                        outras ações de marketing,
+                        como campanhas pagas,
+                        e-mail marketing, inbound marketing, etc.
+                    <p>
+                </dd>
 
-            <section id="faq">
-                <dl>
+                <dt>Quais são as etapas da Otimização da Taxa de Conversão?</dt>
+                <dd>
+                    <p>
+                        A primeira etapa consiste em analisar os
+                        dados da página e da empresa. Em seguida
+                        são formuladas hipóteses,
+                        e depois realizados testes
+                        (como Testes A/B, por exemplo).
+                        Por último, os resultados dos testes
+                        são analisados e aplicados em várias ações,
+                        baseadas em <strong>Growth Hacking</strong>
+                        para otimizar a taxa de conversão.
+                    <p>
+                </dd>
 
-                    <dt>O que é Taxa de Conversão?</dt>
-                    <dd>
-                        <p>
-                            Diferente da Taxa de Cliques (CTR) de uma página,
-                            a taxa de conversão expressa, em porcentagem,
-                            os visitantes que executaram a ação desejada na página.
-                            Por exemplo: Uma página tem o objetivo de vender um produto
-                            e recebe mensalmente 100 visitas. Destas 100 visitas,
-                            20 compraram o produto, logo, a
-                            Taxa de Conversão desta página é de 20%.
-                        <p>
-                    </dd>
+                <dt>O que é Teste A/B?</dt>
+                <dd>
+                    <p>
+                        Teste A/B nada mais é do que criar 2
+                        opções distintas de uma mesma página
+                        para entender qual delas gera mais resultado.
+                        Podemos entender isso observando o número de cliques,
+                        a taxa de conversão, dentre outros pontos.
+                    <p>
+                    <p>No entanto, <strong>CRO (Conversion Rate Optimization)</strong>
+                        não se resume a apenas isso. Embora seja uma parte
+                        importante da estratégia de CRO, o
+                        <strong>Teste A/B</strong> é
+                        apenas uma das técnicas que compõe o
+                        trabalho a ser desenvolvido.
+                    <p>
+                </dd>
 
-                    <dt>O que é CRO?</dt>
-                    <dd>
-                        <p>
-                            A sigla CRO vem do inglês (Conversion Rate Optimization)
-                            e significa Otimização da Taxa de Conversão.
-                            A CRO tem a função de aumentar a conversão de uma
-                            página na internet, de forma estratégica e sem
-                            gastar tanto, levando o usuário a executar uma ação
-                            dentro do site, que geralmente tem o objetivo de
-                            vender um produto, promover o contato,
-                            ou simplesmente gerar visitas em uma página.
-                            Esta otimização também pode se aplicar a
-                            outras ações de marketing,
-                            como campanhas pagas,
-                            e-mail marketing, inbound marketing, etc.
-                        <p>
-                    </dd>
+                <dt>O que é Growth Hacking?</dt>
+                <dd>
+                    <p>
+                        Growth Hacking é uma vertente do Marketing Digital
+                        e está relacionado ao crescimento de uma empresa
+                        através da internet. As empresas de Growth Hacking
+                        fazem todo o trabalho de crescimento digital de
+                        uma empresa, e baseiam-se em testes e resultados
+                        reais, sem achismos,
+                        para montar todas as ações de marketing.
+                    <p>
+                </dd>
 
-                    <dt>Quais são as etapas da Otimização da Taxa de Conversão?</dt>
-                    <dd>
-                        <p>
-                            A primeira etapa consiste em analisar os
-                            dados da página e da empresa. Em seguida
-                            são formuladas hipóteses,
-                            e depois realizados testes
-                            (como Testes A/B, por exemplo).
-                            Por último, os resultados dos testes
-                            são analisados e aplicados em várias ações,
-                            baseadas em <strong>Growth Hacking</strong>
-                            para otimizar a taxa de conversão.
-                        <p>
-                    </dd>
+                <dt>Por que devo fazer a CRO?</dt>
+                <dd>
+                    <p>
+                        A CRO se baseia na ciência de dados e atua
+                        com testes e resultados que mostram a realidade
+                        de suas <strong>estratégias de marketing digital</strong>,
+                        sendo capaz de até <strong>dobrar a taxa de conversão</strong>
+                        da sua página, fazendo você gastar menos com <strong>propagandas
+                            e impulsionamentos</strong> - ou otimizar a verba que você
+                        já costuma investir, fazendo com que você
+                        <strong>obtenha mais resultados com o mesmo orçamento
+                            de marketing</strong> -, contribuindo para o crescimento da sua
+                        empresa. Além disso, várias empresas de sucesso aplicam
+                        <strong>estratégias de CRO em marketing</strong>
+                        diariamente, e esse é um dos motivos que fizeram elas crescerem,
+                        sendo um serviço indispensável para uma Startups e
+                        empresas que operam suas vendas na internet.
+                        <em>CRO é ciência, aqui não há espaço para achismos</em>.
+                    <p>
+                </dd>
 
-                    <dt>O que é Teste A/B?</dt>
-                    <dd>
-                        <p>
-                            Teste A/B nada mais é do que criar 2
-                            opções distintas de uma mesma página
-                            para entender qual delas gera mais resultado.
-                            Podemos entender isso observando o número de cliques,
-                            a taxa de conversão, dentre outros pontos.
-                        <p>
-                        <p>No entanto, <strong>CRO (Conversion Rate Optimization)</strong>
-                            não se resume a apenas isso. Embora seja uma parte
-                            importante da estratégia de CRO, o
-                            <strong>Teste A/B</strong> é
-                            apenas uma das técnicas que compõe o
-                            trabalho a ser desenvolvido.
-                        <p>
-                    </dd>
+                <dt>Quando devo investir em CRO?</dt>
+                <dd>
+                    <p>
+                        Se sua empresa já possui um processo estruturado
+                        de <strong>marketing digital</strong> ou, se sua empresa já
+                        investe <strong>verbas de campanha consistentes</strong> em plataformas
+                        como <strong>Google Ads</strong> ou <strong>Facebook Business Ads</strong>, nesse caso,
+                        convém, a você e a sua equipe, avaliar se está na
+                        hora de investir em estratégia de crescimento e
+                        aceleração de resultados, por meio de CRO.
+                    <p>
+                    <p>
+                        No entanto, se sua empresa: construiu o site agora,
+                        investe verbas mensais de marketing inferiores a R$3.000,00;
+                        se sua empresa busca uma agência para fazer postagens em redes sociais;
+                        se sua empresa não tem metas de projeção de faturamento definidas;
+                        se sua empresa faz "marketing" por pressão do setor de vendas,
+                        mas sem ter um planejamento estruturado que una ambos setores como
+                        complementares (e não concorrentes) para o sucesso do negócio
+                        (e mais alguns fatores de estratégia e metas que não vamos elencar aqui);
+                        e, sobretudo, se sua empresa não entende que é necessário investimento e
+                        paciência para se obter resultados realmente expressivos,
+                        então pode ser que ela ainda não esteja pronta para o <strong>marketing de estratégia
+                            e técnicas de Growth Hacking que o CRO aplicará ao seu negócio</strong>.
+                    <p>
+                </dd>
 
-                    <dt>O que é Growth Hacking?</dt>
-                    <dd>
-                        <p>
-                            Growth Hacking é uma vertente do Marketing Digital
-                            e está relacionado ao crescimento de uma empresa
-                            através da internet. As empresas de Growth Hacking
-                            fazem todo o trabalho de crescimento digital de
-                            uma empresa, e baseiam-se em testes e resultados
-                            reais, sem achismos,
-                            para montar todas as ações de marketing.
-                        <p>
-                    </dd>
+                <dt>Como faço para me tornar cliente da Hacking Growth?</dt>
+                <dd>
+                    <p>
+                        Nossos consultores estão a postos para atender
+                        todos que nos acionam através de nosso formulário
+                        de contato, ou por meio do WhatsApp,
+                        mas pedimos que leve em conta o tópico anterior.
+                    <p>
+                    <p>
+                        Levamos muito a sério cada cliente que escolhemos atender,
+                        por isso nos dedicamos de corpo, alma e coração a fazer
+                        com que cada um obtenha resultados sensacionais.
+                        Eles atingem metas em uma velocidade muito maior por
+                        causa de todo o processo e camada de inteligência que
+                        aplicamos ao seu marketing digital.
+                    <p>
+                    <p>
+                        Isso significa que, apesar de atendermos com cordialidade
+                        cada pessoa que entra em contato conosco,
+                        isso não implica que aceitaremos qualquer empresa para
+                        ser nossa cliente. Nós vamos sempre buscar entender em
+                        que ponto seu negócio está e, a partir daí,
+                        dar segmento na negociação, ou indicar um outro caminho
+                        que faça mais sentido no momento para sua empresa.
+                    <p>
+                </dd>
 
-                    <dt>Por que devo fazer a CRO?</dt>
-                    <dd>
-                        <p>
-                            A CRO se baseia na ciência de dados e atua
-                            com testes e resultados que mostram a realidade
-                            de suas <strong>estratégias de marketing digital</strong>,
-                            sendo capaz de até <strong>dobrar a taxa de conversão</strong>
-                            da sua página, fazendo você gastar menos com <strong>propagandas
-                                e impulsionamentos</strong> - ou otimizar a verba que você
-                            já costuma investir, fazendo com que você
-                            <strong>obtenha mais resultados com o mesmo orçamento
-                                de marketing</strong> -, contribuindo para o crescimento da sua
-                            empresa. Além disso, várias empresas de sucesso aplicam
-                            <strong>estratégias de CRO em marketing</strong>
-                            diariamente, e esse é um dos motivos que fizeram elas crescerem,
-                            sendo um serviço indispensável para uma Startups e
-                            empresas que operam suas vendas na internet.
-                            <em>CRO é ciência, aqui não há espaço para achismos</em>.
-                        <p>
-                    </dd>
+                <dt>O que é Taxa de Conversão?</dt>
+                <dd>
+                    <p>
+                        Diferente da Taxa de Cliques (CTR) de uma página,
+                        a taxa de conversão expressa, em porcentagem,
+                        os visitantes que executaram a ação desejada na página.
+                        Por exemplo: Uma página tem o objetivo de vender um produto
+                        e recebe mensalmente 100 visitas. Destas 100 visitas,
+                        20 compraram o produto, logo, a
+                        Taxa de Conversão desta página é de 20%.
+                    <p>
+                </dd>
 
-                    <dt>Quando devo investir em CRO?</dt>
-                    <dd>
-                        <p>
-                            Se sua empresa já possui um processo estruturado
-                            de <strong>marketing digital</strong> ou, se sua empresa já
-                            investe <strong>verbas de campanha consistentes</strong> em plataformas
-                            como <strong>Google Ads</strong> ou <strong>Facebook Business Ads</strong>, nesse caso,
-                            convém, a você e a sua equipe, avaliar se está na
-                            hora de investir em estratégia de crescimento e
-                            aceleração de resultados, por meio de CRO.
-                        <p>
-                        <p>
-                            No entanto, se sua empresa: construiu o site agora,
-                            investe verbas mensais de marketing inferiores a R$3.000,00;
-                            se sua empresa busca uma agência para fazer postagens em redes sociais;
-                            se sua empresa não tem metas de projeção de faturamento definidas;
-                            se sua empresa faz "marketing" por pressão do setor de vendas,
-                            mas sem ter um planejamento estruturado que una ambos setores como
-                            complementares (e não concorrentes) para o sucesso do negócio
-                            (e mais alguns fatores de estratégia e metas que não vamos elencar aqui);
-                            e, sobretudo, se sua empresa não entende que é necessário investimento e
-                            paciência para se obter resultados realmente expressivos,
-                            então pode ser que ela ainda não esteja pronta para o <strong>marketing de estratégia
-                                e técnicas de Growth Hacking que o CRO aplicará ao seu negócio</strong>.
-                        <p>
-                    </dd>
+                <dt>O que é Taxa de Conversão?</dt>
+                <dd>
+                    <p>
+                        Diferente da Taxa de Cliques (CTR) de uma página,
+                        a taxa de conversão expressa, em porcentagem,
+                        os visitantes que executaram a ação desejada na página.
+                        Por exemplo: Uma página tem o objetivo de vender um produto
+                        e recebe mensalmente 100 visitas. Destas 100 visitas,
+                        20 compraram o produto, logo, a
+                        Taxa de Conversão desta página é de 20%.
+                    <p>
+                </dd>
 
-                    <dt>Como faço para me tornar cliente da Hacking Growth?</dt>
-                    <dd>
-                        <p>
-                            Nossos consultores estão a postos para atender
-                            todos que nos acionam através de nosso formulário
-                            de contato, ou por meio do WhatsApp,
-                            mas pedimos que leve em conta o tópico anterior.
-                        <p>
-                        <p>
-                            Levamos muito a sério cada cliente que escolhemos atender,
-                            por isso nos dedicamos de corpo, alma e coração a fazer
-                            com que cada um obtenha resultados sensacionais.
-                            Eles atingem metas em uma velocidade muito maior por
-                            causa de todo o processo e camada de inteligência que
-                            aplicamos ao seu marketing digital.
-                        <p>
-                        <p>
-                            Isso significa que, apesar de atendermos com cordialidade
-                            cada pessoa que entra em contato conosco,
-                            isso não implica que aceitaremos qualquer empresa para
-                            ser nossa cliente. Nós vamos sempre buscar entender em
-                            que ponto seu negócio está e, a partir daí,
-                            dar segmento na negociação, ou indicar um outro caminho
-                            que faça mais sentido no momento para sua empresa.
-                        <p>
-                    </dd>
+                <dt>O que é Taxa de Conversão?</dt>
+                <dd>
+                    <p>
+                        Diferente da Taxa de Cliques (CTR) de uma página,
+                        a taxa de conversão expressa, em porcentagem,
+                        os visitantes que executaram a ação desejada na página.
+                        Por exemplo: Uma página tem o objetivo de vender um produto
+                        e recebe mensalmente 100 visitas. Destas 100 visitas,
+                        20 compraram o produto, logo, a
+                        Taxa de Conversão desta página é de 20%.
+                    <p>
+                </dd>
 
-                    <dt>O que é Taxa de Conversão?</dt>
-                    <dd>
-                        <p>
-                            Diferente da Taxa de Cliques (CTR) de uma página,
-                            a taxa de conversão expressa, em porcentagem,
-                            os visitantes que executaram a ação desejada na página.
-                            Por exemplo: Uma página tem o objetivo de vender um produto
-                            e recebe mensalmente 100 visitas. Destas 100 visitas,
-                            20 compraram o produto, logo, a
-                            Taxa de Conversão desta página é de 20%.
-                        <p>
-                    </dd>
+            </dl>
+        </section>
 
-                    <dt>O que é Taxa de Conversão?</dt>
-                    <dd>
-                        <p>
-                            Diferente da Taxa de Cliques (CTR) de uma página,
-                            a taxa de conversão expressa, em porcentagem,
-                            os visitantes que executaram a ação desejada na página.
-                            Por exemplo: Uma página tem o objetivo de vender um produto
-                            e recebe mensalmente 100 visitas. Destas 100 visitas,
-                            20 compraram o produto, logo, a
-                            Taxa de Conversão desta página é de 20%.
-                        <p>
-                    </dd>
+    </main>
 
-                    <dt>O que é Taxa de Conversão?</dt>
-                    <dd>
-                        <p>
-                            Diferente da Taxa de Cliques (CTR) de uma página,
-                            a taxa de conversão expressa, em porcentagem,
-                            os visitantes que executaram a ação desejada na página.
-                            Por exemplo: Uma página tem o objetivo de vender um produto
-                            e recebe mensalmente 100 visitas. Destas 100 visitas,
-                            20 compraram o produto, logo, a
-                            Taxa de Conversão desta página é de 20%.
-                        <p>
-                    </dd>
-
-                </dl>
-            </section>
-
-        </main>
-
-        <footer>
-            © 2020 Hacking Growth Inovação. Todos os direitos reservados. Desenvolvido por Hacking Growth Inovação
-        </footer>
+    <footer>
+        © 2020 Hacking Growth Inovação. Todos os direitos reservados. Desenvolvido por Hacking Growth Inovação
+    </footer>
 
 
-        <script>
-            $ = query => document.querySelector(query)
+    <script>
+        $ = query => document.querySelector(query)
 
-            const menuOff = $('#menuOff')
-            const menuOn = $('#menuOn')
+        const menuOff = $('#menuOff')
+        const menuOn = $('#menuOn')
 
-            $('#menuOff').onclick = () => {
-                menuOff.style.display = 'none'
-                menuOn.style.display = 'block'
-            }
+        $('#menuOff').onclick = () => {
+            menuOff.style.display = 'none'
+            menuOn.style.display = 'block'
+        }
 
-            $('#menuOn').onclick = () => {
-                menuOff.style.display = 'block'
-                menuOn.style.display = 'none'
-            }
-        </script>
+        $('#menuOn').onclick = () => {
+            menuOff.style.display = 'block'
+            menuOn.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
