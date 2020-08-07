@@ -29,10 +29,16 @@ module.exports =
         </div>
     </div>
     <div class="desktop">
-        <div class="bg-dark flx p-2rem">
+        <div class="bg-dark flx j-between p-2rem">
             <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">        
             <div>
-
+                <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
+                    <li>Home</li>
+                    <li>Nossos Serviços</li>
+                    <li>Cases de sucesso</li>
+                    <li>Quem Somos</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
             </div>
         </div>
     </div>

@@ -17,7 +17,9 @@ const elements = {
         @media(min-width: 1000px){
             .h-85vLG {
                 height: 85vh;
-                background-color: red;
+            }
+            .h-70vLG {
+                height: 70vh;
             }
         }
     `,
