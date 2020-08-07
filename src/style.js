@@ -1,4 +1,4 @@
-global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold'
+global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem block'
 
 const elements = {
     h: /*css*/`

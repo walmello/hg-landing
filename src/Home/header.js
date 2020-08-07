@@ -13,7 +13,8 @@ module.exports =
             <strong>de marketing</strong> <br> baseadas em 
             <strong>inteligência, otimização e dados.</strong>
         </h2>
-		<div class="p-1rem"></div>
-		<a class="${button}" href="#">Fale agora mesmo com um especialista</a>
+		<div class="p-1rem flx j-center">
+			<a class="${button}" href="#">Fale agora mesmo com um especialista</a>
+		</div>		
 </header>
 `
