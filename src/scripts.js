@@ -17,5 +17,9 @@ $('#menuOn').onclick = () => {
 
 window.onscroll = () => {
     scroll = window.scrollY
-    console.log(scroll)
+    if(scroll > 150){
+        $('#sticky').style.display = 'block'
+    } else {
+        $('#sticky').style.display = 'none'
+    }
 }
