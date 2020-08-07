@@ -1,4 +1,4 @@
-global.button = 'bg-primary p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold'
+global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold'
 
 const elements = {
     h: /*css*/`
@@ -47,6 +47,9 @@ const elements = {
         }        
         .bg-dark {
             background-color: var(--dark);
+        }
+        .bg-white {
+            background-color: white;
         }
         .bg-red {
             background-color: red;
