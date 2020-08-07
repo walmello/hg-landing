@@ -1,10 +1,10 @@
-const header = "bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG"
+const header = "bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center tx-leftLG w-auto"
 const span = "block c-primary tx-75"
 
 module.exports = 
 /*html*/`
 <header id="promessa" class="${header}">
-    	<h1 class="tx-2rem">
+    	<h1 class="tx-2rem tx-3remLG">
 			Otimize seu marketing digital
 		<span class="${span}">e aumente a taxa de conversão do seu negócio</span>
 		</h1>

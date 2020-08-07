@@ -9,11 +9,11 @@ const Homepages = pages(
 )
 
 module.exports = /*html*/`
-    <div class="flxLG flx-grow">
+    <div class="flxLG">
         <div>
             ${page('Home/social')}
         </div>
-        <div>
+        <div class="w-100">
             ${page('navbar')}
             ${page('Home/header')}
         </div>

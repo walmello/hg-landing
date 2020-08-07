@@ -105,6 +105,10 @@
             width: 100%;
         }
 
+        .w-1rem {
+            width: 1rem;
+        }
+
         .w-2rem {
             width: 2rem;
         }
@@ -115,6 +119,10 @@
 
         .w-4rem {
             width: 4rem;
+        }
+
+        .w-5rem {
+            width: 5rem;
         }
 
         .w-8rem {
@@ -131,6 +139,10 @@
 
         .w-20rem {
             width: 20rem;
+        }
+
+        .w-auto {
+            width: auto;
         }
 
         .bg-dark-t {
@@ -199,6 +211,12 @@
 
         .tx-3rem {
             font-size: 3rem;
+        }
+
+        @media(min-width: 1000px) {
+            .tx-3remLG {
+                font-size: 3rem;
+            }
         }
 
         .tx-4rem {
@@ -295,6 +313,10 @@
             flex-grow: 1;
         }
 
+        .flx-col {
+            flex-direction: column;
+        }
+
         .j-center {
             justify-content: center;
         }
@@ -327,12 +349,24 @@
             border-top: 5px solid var(--pink);
         }
 
+        .brr-c-primary {
+            border-right: 5px solid var(--pink);
+        }
+
         .ul-none {
             list-style: none;
         }
 
         .li-p-1rem>* {
             padding: 1rem
+        }
+
+        .li-p-2rem>* {
+            padding: 2rem
+        }
+
+        .li-rotate>* {
+            transform: rotate(-90deg);
         }
 
         .block {
@@ -373,10 +407,20 @@
         -->
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="flxLG flx-grow">
+    <div class="flxLG">
         <div>
 
-            AAAAA
+            <aside class="bg-dark h-100 w-5rem brr-c-primary c-white">
+                <div class="desktop">
+                    <ul class="ul-none h-100 flx flx-col j-around li-rotate m-0 tx-bold">
+                        <div></div>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                        <div></div>
+                    </ul>
+                </div>
+            </aside>
             <!--
     <ul class="h-4rem m-0 bg-dark fixed w-100v p-05rem bottom flx j-around a-center ul-none brd-box brt-c-primary c-white">
         <li>F</li>
@@ -386,7 +430,7 @@
     -->
 
         </div>
-        <div>
+        <div class="w-100">
 
             <nav>
                 <div class="mobile">
@@ -487,8 +531,8 @@
                 </nav>
 
 
-                <header id="promessa" class="bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG">
-                    <h1 class="tx-2rem">
+                <header id="promessa" class="bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center tx-leftLG w-auto">
+                    <h1 class="tx-2rem tx-3remLG">
                         Otimize seu marketing digital
                         <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
                     </h1>

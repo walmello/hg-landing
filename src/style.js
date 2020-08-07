@@ -22,6 +22,9 @@ const elements = {
         .w-100 {
             width: 100%;
         }
+        .w-1rem {
+            width: 1rem;
+        }
         .w-2rem {
             width: 2rem;
         }
@@ -30,6 +33,9 @@ const elements = {
         }
         .w-4rem {
             width: 4rem;
+        }
+        .w-5rem {
+            width: 5rem;
         }
         .w-8rem {
             width: 8rem;
@@ -42,6 +48,9 @@ const elements = {
         }
         .w-20rem {
             width: 20rem;
+        }
+        .w-auto {
+            width: auto;
         }
     `,
     bg: /*css*/`
@@ -102,6 +111,11 @@ const elements = {
         }
         .tx-3rem {
             font-size: 3rem;
+        }
+        @media(min-width: 1000px){
+            .tx-3remLG {
+                font-size: 3rem;
+            }
         }
         .tx-4rem {
             font-size: 4rem;
@@ -187,6 +201,9 @@ const elements = {
         .flx-grow > * {
             flex-grow: 1;
         }
+        .flx-col {
+            flex-direction: column;
+        }
         .j-center {
             justify-content: center;
         }
@@ -213,6 +230,9 @@ const elements = {
         .brt-c-primary {
             border-top: 5px solid var(--pink);
         }
+        .brr-c-primary {
+            border-right: 5px solid var(--pink);
+        }
     `,
     li: /*css*/`
         .ul-none {
@@ -221,6 +241,14 @@ const elements = {
 
         .li-p-1rem > * {
             padding: 1rem
+        }
+
+        .li-p-2rem > * {
+            padding: 2rem
+        }
+
+        .li-rotate > * {
+            transform: rotate(-90deg);
         }
     `,
     display: /*css*/`
