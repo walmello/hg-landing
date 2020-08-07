@@ -15,6 +15,8 @@ module.exports =
             <img class="${nav.logo}" src="static/img/hg.png" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
             <img id="menuOff" class="${nav.menu}" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
             <div id="menuOn" class="none">
+                <div class="w-3rem"> 
+                </div>
                 <div class="flx bg-dark-t c-white absolute top right p-1rem">
                     <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
                         <li>Home</li>
@@ -29,6 +31,19 @@ module.exports =
         </div>
     </div>
     <div class="desktop">
+        <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-around">
+            <img class="${nav.logo}" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+            <div class="flx a-center">
+                <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
+                    <li>Home</li>
+                    <li>Nossos Serviços</li>
+                    <li>Cases de sucesso</li>
+                    <li>Quem Somos</li>
+                    <li>Trabalhe conosco</li>
+                </ul>
+            </div>
+        </div>
+        <!--
         <div class="bg-dark flx j-between p-2rem">
             <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">        
             <div>
@@ -41,6 +56,7 @@ module.exports =
                 </ul>
             </div>
         </div>
+        -->
     </div>
 <nav>
 <!--

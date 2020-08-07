@@ -2,6 +2,9 @@ global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-
 
 const elements = {
     h: /*css*/`
+        .h-2rem {
+            height: 2rem;
+        }
         .h-4rem {
             height: 4rem;
         }
@@ -191,6 +194,10 @@ const elements = {
 
         .bottom {
             bottom: 0;
+        }
+
+        .left {
+            left: 0;
         }
     `,
     flx: /*css*/`
