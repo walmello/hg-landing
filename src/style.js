@@ -14,6 +14,12 @@ const elements = {
         .h-85v {
             height: 85vh;
         }
+        @media(min-width: 1000px){
+            .h-85vLG {
+                height: 85vh;
+                background-color: red;
+            }
+        }
     `,
     w: /*css*/`
         .w-100v {
