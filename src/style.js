@@ -109,6 +109,12 @@ const elements = {
         .tx-upper {
             text-transform: uppercase;
         }
+        .tx-50 {
+            font-size: 50%;
+        }
+        .tx-75 {
+            font-size: 75%;
+        }
     `,
     m: /*css*/`
         .m-0 {

@@ -31,13 +31,4 @@
 
 html {
     font-family: 'Montserrat';
-    text-align: center;
-    font-size: 80%;
-}
-
-@media (min-width: 1000px){
-    html {
-        text-align: left;
-        font-size: 100%;
-    }
 }
