@@ -80,25 +80,44 @@ const produtos = [
         ]
     }
 ].map(p => /*html*/`
-    <div>
-		<div>
+    <div class="c-white flx j-center p-1rem">
+        <div class="bg-white c-dark p-1rem">
             <img 
                 src="static/img/produtos/${p.id}.svg" 
                 alt="${p.alt}"
+                class="w-5rem p-1rem"
             >
-			<h3>${p.title}</h3>
-			<div>
+            <div class="tx-center w-15rem">
+                <h3>${p.title}</h3>
                 ${p.content.map(p => '<p>' + p + '<p>').join('')}
-			</div>
-			<div>
-				<a href="#" class="">Saiba mais</a>				
-			</div>
+            </div>
         </div>
     </div>
+    <!--
+    <div class="bg-white c-dark m-1rem">
+        <div class="p-2rem">
+            <img 
+                src="static/img/produtos/${p.id}.svg" 
+                alt="${p.alt}"
+                class="w-5rem"
+            >
+            <h3 class="w-15rem">${p.title}</h3>
+            <div>
+                ${p.content.map(p => '<p>' + p + '<p>').join('')}
+            </div>
+        </div>
+        <div class="">
+		    <a href="#" class="${button_black}">Saiba mais</a>				
+		</div>
+        <div class="p-1rem">
+            </div>
+        </div>
+    <div>
+    -->
 `).join('')
 
 module.exports = /*html*/`
-    <section id="product-bundle" class="row">
+    <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG flx-grow j-center">
         ${produtos}
 	</section>
 `

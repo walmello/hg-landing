@@ -48,7 +48,7 @@ const imagens = [
 `).join('')
 
 module.exports = /*html*/`
-<section id="autoridade">
+<section id="autoridade" class="">
     <div>
         <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
         ${imagens}

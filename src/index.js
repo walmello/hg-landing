@@ -18,7 +18,7 @@ module.exports = /*html*/`
             ${page('Home/header')}
         </div>
     </div>
-    <main>
+    <main class="">
         ${Homepages}
     </main>
     ${page('footer')}

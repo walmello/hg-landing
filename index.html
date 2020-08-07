@@ -119,6 +119,10 @@
             width: 100%;
         }
 
+        .w-75 {
+            width: 75%;
+        }
+
         .w-1rem {
             width: 1rem;
         }
@@ -211,6 +215,10 @@
             color: var(--pink);
         }
 
+        .c-dark {
+            color: var(--dark);
+        }
+
         .tx-center {
             text-align: center;
         }
@@ -275,6 +283,10 @@
             margin: 0;
         }
 
+        .m-1rem {
+            margin: 1rem;
+        }
+
         .p-0 {
             padding: 0;
         }
@@ -322,6 +334,12 @@
 
         .flx {
             display: flex;
+        }
+
+        @media(min-width: 700px) {
+            .flxMD {
+                display: flex;
+            }
         }
 
         @media(min-width: 1000px) {
@@ -557,7 +575,7 @@
             </nav>
 
 
-            <header id="promessa" class="bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center tx-leftLG w-auto h-70vLG">
+            <header id="promessa" class="bg-dark c-white flx flx-col j-center h-80v p-2rem tx-center tx-leftLG w-auto h-70vLG">
                 <h1 class="tx-2rem tx-3remLG ">
                     Otimize seu marketing digital
                     <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
@@ -567,37 +585,32 @@
                     <strong>de marketing</strong> <br> baseadas em
                     <strong>inteligência, otimização e dados.</strong>
                 </h2>
-                <div class="p-1rem flx">
-
-                </div>
                 <p>
-                    <a class="bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem inline-block" href="#">Fale agora mesmo com um especialista</a>
+                    <a class="bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block" href="#">Fale agora mesmo com um especialista</a>
                 </p>
             </header>
 
         </div>
     </div>
-    <main>
+    <main class="">
 
-        <section id="tripwire">
-            <div class="fade-left">
-                <h2><strong>Seu negócio</strong> foi afetado pela crise?</h2>
-                <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
-                <a class="" href="#">Quero saber mais</a>
-            </div>
+        <section id="tripwire" class="tx-center tx-leftLG p-2rem">
+            <h2 class="c-primary"><strong class="block tx-3rem c-dark">Seu negócio</strong> foi afetado pela crise?</h2>
+            <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
+            <a class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block" href="#">Quero saber mais</a>
         </section>
 
-        <section id="product-bundle" class="row">
+        <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG flx-grow j-center">
 
-            <div>
-                <div>
+            <div class="c-white flx j-center p-1rem">
+                <div class="bg-white c-dark p-1rem">
                     <img src="static/img/produtos/1.svg" alt="
             Ícone nas cores rosa, verde, roxo e azul, 
             de um gráfico de barras crescente, com uma seta acima, 
             com as mesmas cores, indicando o crescimento da performance 
-            do seu marketing digital com o serviço de consultoria da HG.">
-                    <h3>Consultoria em CRO</h3>
-                    <div>
+            do seu marketing digital com o serviço de consultoria da HG." class="w-5rem p-1rem">
+                    <div class="tx-center w-15rem">
+                        <h3>Consultoria em CRO</h3>
                         <p>
                             Sua taxa crescimento está boa,
                             mas você sabe que <strong>poderia ser melhor</strong>?
@@ -610,23 +623,53 @@
                             <strong>todo o seu processo de vendas</strong>
                         <p>
                     </div>
-                    <div>
-                        <a href="#" class="">Saiba mais</a>
-                    </div>
                 </div>
             </div>
-
+            <!--
+    <div class="bg-white c-dark m-1rem">
+        <div class="p-2rem">
+            <img 
+                src="static/img/produtos/1.svg" 
+                alt="
+            Ícone nas cores rosa, verde, roxo e azul, 
+            de um gráfico de barras crescente, com uma seta acima, 
+            com as mesmas cores, indicando o crescimento da performance 
+            do seu marketing digital com o serviço de consultoria da HG."
+                class="w-5rem"
+            >
+            <h3 class="w-15rem">Consultoria em CRO</h3>
             <div>
-                <div>
+                <p>
+                Sua taxa crescimento está boa, 
+                mas você sabe que <strong>poderia ser melhor</strong>? 
+                Não entende o porquê de seus resultados 
+                não serem os esperados?<p><p>
+                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
+                entram em ação para fazer um pente fino em 
+                <strong>todo o seu processo de vendas</strong>
+            <p>
+            </div>
+        </div>
+        <div class="">
+		    <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>				
+		</div>
+        <div class="p-1rem">
+            </div>
+        </div>
+    <div>
+    -->
+
+            <div class="c-white flx j-center p-1rem">
+                <div class="bg-white c-dark p-1rem">
                     <img src="static/img/produtos/2.svg" alt="
             Ícone de um monitor com um megafone dentro e 
             3 balões de fala acima, nas cores rosa, verde, roxo
             e azul, indicando que sua empresa será conhecida e 
             falada por todos com o nosso serviço de 
             otimização de campanhas de marketing.
-        ">
-                    <h3>Otimização de campanhas</h3>
-                    <div>
+        " class="w-5rem p-1rem">
+                    <div class="tx-center w-15rem">
+                        <h3>Otimização de campanhas</h3>
                         <p>
                             Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
                         <p>
@@ -636,14 +679,44 @@
                             <strong>todo o seu processo de vendas</strong>
                         <p>
                     </div>
-                    <div>
-                        <a href="#" class="">Saiba mais</a>
-                    </div>
                 </div>
             </div>
-
+            <!--
+    <div class="bg-white c-dark m-1rem">
+        <div class="p-2rem">
+            <img 
+                src="static/img/produtos/2.svg" 
+                alt="
+            Ícone de um monitor com um megafone dentro e 
+            3 balões de fala acima, nas cores rosa, verde, roxo
+            e azul, indicando que sua empresa será conhecida e 
+            falada por todos com o nosso serviço de 
+            otimização de campanhas de marketing.
+        "
+                class="w-5rem"
+            >
+            <h3 class="w-15rem">Otimização de campanhas</h3>
             <div>
-                <div>
+                <p>
+                Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
+            <p><p>
+                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
+                entram em ação para fazer um pente fino em 
+                <strong>todo o seu processo de vendas</strong>
+            <p>
+            </div>
+        </div>
+        <div class="">
+		    <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>				
+		</div>
+        <div class="p-1rem">
+            </div>
+        </div>
+    <div>
+    -->
+
+            <div class="c-white flx j-center p-1rem">
+                <div class="bg-white c-dark p-1rem">
                     <img src="static/img/produtos/3.svg" alt="
             Ícone de um funil na cor roxa, 
             onde na parte de cima há 3 pessoas e na 
@@ -652,9 +725,9 @@
             testes A/B da Hacking Growth, 
             o seu marketing digital passa a atingir 
             mais pessoas e gerar mais receita.
-        ">
-                    <h3>CRO e otimização de Testes A/B</h3>
-                    <div>
+        " class="w-5rem p-1rem">
+                    <div class="tx-center w-15rem">
+                        <h3>CRO e otimização de Testes A/B</h3>
                         <p>
                             Sua taxa crescimento está boa,
                             mas você sabe que <strong>poderia ser melhor</strong>?
@@ -677,15 +750,57 @@
                             Conheça nosso processo clicando abaixo.
                         <p>
                     </div>
-                    <div>
-                        <a href="#" class="">Saiba mais</a>
-                    </div>
                 </div>
             </div>
+            <!--
+    <div class="bg-white c-dark m-1rem">
+        <div class="p-2rem">
+            <img 
+                src="static/img/produtos/3.svg" 
+                alt="
+            Ícone de um funil na cor roxa, 
+            onde na parte de cima há 3 pessoas e na 
+            parte de baixo uma moeda rosa com o cifrão, 
+            indicando que com o serviço de CRO e otimização de 
+            testes A/B da Hacking Growth, 
+            o seu marketing digital passa a atingir 
+            mais pessoas e gerar mais receita.
+        "
+                class="w-5rem"
+            >
+            <h3 class="w-15rem">CRO e otimização de Testes A/B</h3>
+            <div>
+                <p>
+                Sua taxa crescimento está boa, 
+                mas você sabe que <strong>poderia ser melhor</strong>? 
+                Não entende o porquê de seus resultados 
+                não serem os esperados?<p><p>
+                Nossa equipe de <strong>especialistas em CRO e Growth Hacking</strong> 
+                entram em ação para fazer um pente fino em 
+                <strong>todo o seu processo de vendas</strong>
+            <p><p>
+                Com os testes A/B encontramos os principais fatores 
+                que não fazem a sua campanha alcançar os resultados esperados. 
+                Analisamos o desempenho e definimos qual é a 
+                melhor estratégia para o seu anúncio.
+            <p><p>
+                Aumente hoje mesmo a escalabilidade de seus negócios! 
+                Conheça nosso processo clicando abaixo.
+            <p>
+            </div>
+        </div>
+        <div class="">
+		    <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>				
+		</div>
+        <div class="p-1rem">
+            </div>
+        </div>
+    <div>
+    -->
 
         </section>
 
-        <section id="autoridade">
+        <section id="autoridade" class="">
             <div>
                 <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
 

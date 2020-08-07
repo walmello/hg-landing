@@ -1,4 +1,5 @@
-global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem inline-block'
+global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block'
+global.button_black = 'bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block'
 global.link = "c-white hover-c-primary tx-none"
 
 const elements = {
@@ -33,6 +34,9 @@ const elements = {
         }
         .w-100 {
             width: 100%;
+        }
+        .w-75 {
+            width: 75%;
         }
         .w-1rem {
             width: 1rem;
@@ -110,6 +114,9 @@ const elements = {
         .hover-c-primary:hover {
             color: var(--pink);
         }
+        .c-dark {
+            color: var(--dark);
+        }
     `,
     tx: /*css*/`
         .tx-center {
@@ -163,6 +170,9 @@ const elements = {
         .m-0 {
             margin: 0;
         }
+        .m-1rem {
+            margin: 1rem;
+        }
     `,
     p: /*css*/`
         .p-0 {
@@ -210,6 +220,11 @@ const elements = {
     flx: /*css*/`
         .flx {
             display: flex;
+        }
+        @media(min-width: 700px){
+            .flxMD {
+                display: flex;
+            }    
         }
         @media(min-width: 1000px){
             .flxLG{
