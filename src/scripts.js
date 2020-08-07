@@ -10,7 +10,7 @@ $('#menuOff').onclick = () => {
     menuOn.style.display = 'block'
 }
 
-$('#menuOn').onclick = () => {
+$('#menuClose').onclick = () => {
     menuOff.style.display = 'block'
     menuOn.style.display = 'none'
 }

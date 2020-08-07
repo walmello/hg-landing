@@ -5,12 +5,26 @@ const nav = {
     menuopen: ''
 }
 
-module.exports = 
-/*html*/`
-<nav>
-    <div class="mobile">
-        <div class="${nav.mobile}">
-            <div class="w-3rem"> 
+const list = /*html*/`
+    <li>
+                        <a href="#" class="${link}">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Cases de sucesso</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Quem Somos</a>                        
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Trabalhe conosco</a>
+                    </li>
+`
+
+const mobile = /*html*/`
+    <div class="w-3rem"> 
             </div>
             <img class="${nav.logo}" src="static/img/hg.png" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
             <img id="menuOff" class="${nav.menu}" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
@@ -19,20 +33,15 @@ module.exports =
                 </div>
                 <div class="flx bg-dark-t c-white absolute top right p-1rem">
                     <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
-                        <li>Home</li>
-                        <li>Nossos Serviços</li>
-                        <li>Cases de sucesso</li>
-                        <li>Quem Somos</li>
-                        <li>Trabalhe conosco</li>
+                        ${list}
                     </ul>
-                    <img class="${nav.menu}" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+                    <img id="menuClose" class="${nav.menu}" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
                 </div>
-            </div>            
-        </div>
-    </div>
-    <div class="desktop">
-        <div id="sticky" class="none">
-            <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-between">
+            </div>          
+`
+
+const sticky = /*html*/`
+    <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-between">
                 <div class="w-3rem"> 
                 </div>
                 <img class="${nav.logo}" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
@@ -48,98 +57,32 @@ module.exports =
                 <div class="w-3rem c-white"> 
                 </div>
             </div>
-        </div>
-        <div class="bg-dark flx j-between p-2rem">
+`
+
+const desktop = /*html*/`
+    <div class="bg-dark flx j-between p-2rem">
             <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">        
             <div>
                 <ul class="p-0 flx ul-none li-p-1rem c-white tx-upper tx-bold">
-                    <li>
-                        <a href="#" class="${link}">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="${link}">Nossos Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#" class="${link}">Cases de sucesso</a>
-                    </li>
-                    <li>
-                        <a href="#" class="${link}">Quem Somos</a>                        
-                    </li>
-                    <li>
-                        <a href="#" class="${link}">Trabalhe conosco</a>
-                    </li>
+                    ${list}
                 </ul>
             </div>
         </div>
-    </div>
+`
+
+module.exports = 
+/*html*/`
 <nav>
-<!--
-<nav class="${nav.bar}">
-    <div>
-        <img class="${nav.logo}" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-    </div>
-    <div>
-        <div class="mobile">
-            <div id="menuOff" class="h-100">
-                <img class="${nav.menu}" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
-            </div>        
-            <div id="menuOn" class="none">        
-                <div class="flx li-none c-white bg-dark absolute right top m-0 p-1rem">
-                    <ul class="ul-none p-0 li-p-1rem tx-upper tx-bold tx-left w-15rem p-1rem">
-                        <li>Home</li>
-                        <li>Nossos Serviços</li>
-                        <li>Cases de sucesso</li>
-                        <li>Quem Somos</li>
-                        <li>Trabalhe conosco</li>
-                    </ul>
-                    <img class="${nav.menu}" src="static/img/x.svg" alt="Ícone para fechar o menu">
-                </div>
-            </div>
-        </div>
-        <div class="desktop">
-            <p>desktop</p>
-        </div>
-    </div>
-    <!--
     <div class="mobile">
-        <div id="menuOff" class="h-100 bg-red">
-            <img class="bg-red ${nav.menu}" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
-        </div>        
-        
-        <ul class="flx p-0 ul-none c-white li-p-1rem tx-upper tx-bold">
-            <li>Home</li>
-            <li>Nossos Serviços</li>
-            <li>Cases de sucesso</li>
-            <li>Quem Somos</li>
-            <li>Trabalhe conosco</li>
-        </ul>
-
-        <div id="menuOn" class="none">        
-            <div class="flx li-none c-white bg-dark absolute right top m-0 p-1rem">
-                <ul class="ul-none p-0 li-p-1rem tx-upper tx-bold w-10rem p-1rem">
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                </ul>
-                <img class="${nav.menu}" src="static/img/x.svg" alt="Ícone para fechar o menu">
-            </div>
+        <div class="${nav.mobile}">
+            ${mobile}
         </div>
     </div>
-    <div class="desktop ">
-        <div class="flx a-center">
-            <ul class="flx a-center p-0 ul-none c-white li-p-1rem tx-upper tx-bold">
-                <li>Home</li>
-                <li>Nossos Serviços</li>
-                <li>Cases de sucesso</li>
-                <li>Quem Somos</li>
-                <li>Trabalhe conosco</li>
-            </ul>
+    <div class="desktop">
+        <div id="sticky" class="none">
+            ${sticky}
         </div>
+        ${desktop}
     </div>
-    -->
-
 </nav>
 `
