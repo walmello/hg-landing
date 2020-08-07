@@ -158,6 +158,10 @@ const elements = {
         .right {
             right: 0;
         }
+
+        .bottom {
+            bottom: 0;
+        }
     `,
     flx: /*css*/`
         .flx {
@@ -165,6 +169,9 @@ const elements = {
         }
         .j-between {
             justify-content: space-between;
+        }
+        .j-around {
+            justify-content: space-around;
         }
         .flx-col {
             flex-direction: column;
@@ -179,6 +186,9 @@ const elements = {
     br: /*css*/`
         .br-rad-1rem {
             border-radius: 1rem;
+        }
+        .brt-c-primary {
+            border-top: 5px solid var(--pink);
         }
     `,
     li: /*css*/`
