@@ -31,32 +31,46 @@ module.exports =
         </div>
     </div>
     <div class="desktop">
-        <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-around">
-            <img class="${nav.logo}" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-            <div class="flx a-center">
-                <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
-                    <li>Home</li>
-                    <li>Nossos Serviços</li>
-                    <li>Cases de sucesso</li>
-                    <li>Quem Somos</li>
-                    <li>Trabalhe conosco</li>
-                </ul>
+        <div id="sticky" class="none">
+            <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-between">
+                <div class="w-3rem"> 
+                </div>
+                <img class="${nav.logo}" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+                <div class="flx a-center">
+                    <ul class="flx ul-none li-p-05rem c-white tx-upper tx-bold">
+                        <li>Home</li>
+                        <li>Nossos Serviços</li>
+                        <li>Cases de sucesso</li>
+                        <li>Quem Somos</li>
+                        <li>Trabalhe conosco</li>
+                    </ul>
+                </div>
+                <div class="w-3rem c-white"> 
+                </div>
             </div>
         </div>
-        <!--
         <div class="bg-dark flx j-between p-2rem">
             <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">        
             <div>
-                <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
-                    <li>Home</li>
-                    <li>Nossos Serviços</li>
-                    <li>Cases de sucesso</li>
-                    <li>Quem Somos</li>
-                    <li>Trabalhe conosco</li>
+                <ul class="p-0 flx ul-none li-p-1rem c-white tx-upper tx-bold">
+                    <li>
+                        <a href="#" class="${link}">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Nossos Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Cases de sucesso</a>
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Quem Somos</a>                        
+                    </li>
+                    <li>
+                        <a href="#" class="${link}">Trabalhe conosco</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        -->
     </div>
 <nav>
 <!--

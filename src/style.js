@@ -1,4 +1,5 @@
 global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-15rem inline-block'
+global.link = "c-white hover-c-primary tx-none"
 
 const elements = {
     h: /*css*/`
@@ -106,6 +107,9 @@ const elements = {
         .c-white {
             color: white;
         }
+        .hover-c-primary:hover {
+            color: var(--pink);
+        }
     `,
     tx: /*css*/`
         .tx-center {
@@ -150,6 +154,9 @@ const elements = {
             .tx-leftLG{
                 text-align: left;
             }
+        }
+        .tx-none {
+            text-decoration: none;
         }
     `,
     m: /*css*/`
@@ -252,6 +259,10 @@ const elements = {
     li: /*css*/`
         .ul-none {
             list-style: none;
+        }
+
+        .li-p-05rem > * {
+            padding: 0.5rem
         }
 
         .li-p-1rem > * {

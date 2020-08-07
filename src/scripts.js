@@ -3,6 +3,8 @@ $ = query => document.querySelector(query)
 const menuOff = $('#menuOff')
 const menuOn = $('#menuOn')
 
+let scroll = window.scrollY
+
 $('#menuOff').onclick = () => {
     menuOff.style.display = 'none'
     menuOn.style.display = 'block'
@@ -11,4 +13,9 @@ $('#menuOff').onclick = () => {
 $('#menuOn').onclick = () => {
     menuOff.style.display = 'block'
     menuOn.style.display = 'none'
+}
+
+window.onscroll = () => {
+    scroll = window.scrollY
+    console.log(scroll)
 }

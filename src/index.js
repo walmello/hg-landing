@@ -13,7 +13,7 @@ module.exports = /*html*/`
         <div>
             ${page('Home/social')}
         </div>
-        <div class="w-100">
+        <div class="w-100 bg-dark">
             ${page('navbar')}
             ${page('Home/header')}
         </div>

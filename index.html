@@ -207,6 +207,10 @@
             color: white;
         }
 
+        .hover-c-primary:hover {
+            color: var(--pink);
+        }
+
         .tx-center {
             text-align: center;
         }
@@ -261,6 +265,10 @@
             .tx-leftLG {
                 text-align: left;
             }
+        }
+
+        .tx-none {
+            text-decoration: none;
         }
 
         .m-0 {
@@ -375,6 +383,10 @@
             list-style: none;
         }
 
+        .li-p-05rem>* {
+            padding: 0.5rem
+        }
+
         .li-p-1rem>* {
             padding: 1rem
         }
@@ -429,6 +441,13 @@
         <div>
 
             <aside class="bg-dark h-100 w-5rem brr-c-primary c-white">
+                <div class="mobile">
+                    <ul class="h-4rem m-0 bg-dark fixed w-100v p-05rem bottom flx j-around a-center ul-none brd-box brt-c-primary c-white">
+                        <li>F</li>
+                        <li>L</li>
+                        <li>T</li>
+                    </ul>
+                </div>
                 <div class="desktop">
                     <ul class="ul-none h-100 flx flx-col j-around li-rotate m-0 tx-bold">
                         <div></div>
@@ -448,7 +467,7 @@
     -->
 
         </div>
-        <div class="w-100">
+        <div class="w-100 bg-dark">
 
             <nav>
                 <div class="mobile">
@@ -474,32 +493,46 @@
                     </div>
                 </div>
                 <div class="desktop">
-                    <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-around">
-                        <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-                        <div class="flx a-center">
-                            <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
-                                <li>Home</li>
-                                <li>Nossos Serviços</li>
-                                <li>Cases de sucesso</li>
-                                <li>Quem Somos</li>
-                                <li>Trabalhe conosco</li>
+                    <div id="sticky" class="none">
+                        <div class="fixed flx h-2rem bg-dark w-100 left p-1rem j-between">
+                            <div class="w-3rem">
+                            </div>
+                            <img class="h-100" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+                            <div class="flx a-center">
+                                <ul class="flx ul-none li-p-05rem c-white tx-upper tx-bold">
+                                    <li>Home</li>
+                                    <li>Nossos Serviços</li>
+                                    <li>Cases de sucesso</li>
+                                    <li>Quem Somos</li>
+                                    <li>Trabalhe conosco</li>
+                                </ul>
+                            </div>
+                            <div class="w-3rem c-white">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark flx j-between p-2rem">
+                        <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
+                        <div>
+                            <ul class="p-0 flx ul-none li-p-1rem c-white tx-upper tx-bold">
+                                <li>
+                                    <a href="#" class="c-white hover-c-primary tx-none">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c-white hover-c-primary tx-none">Nossos Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c-white hover-c-primary tx-none">Cases de sucesso</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c-white hover-c-primary tx-none">Quem Somos</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="c-white hover-c-primary tx-none">Trabalhe conosco</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <!--
-        <div class="bg-dark flx j-between p-2rem">
-            <img class="" src="static/img/hg-full.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">        
-            <div>
-                <ul class="flx ul-none li-p-1rem c-white tx-upper tx-bold">
-                    <li>Home</li>
-                    <li>Nossos Serviços</li>
-                    <li>Cases de sucesso</li>
-                    <li>Quem Somos</li>
-                    <li>Trabalhe conosco</li>
-                </ul>
-            </div>
-        </div>
-        -->
                 </div>
                 <nav>
                     <!--
@@ -574,7 +607,7 @@
 
 
                 <header id="promessa" class="bg-dark c-white flx flx-col j-center h-100v p-2rem tx-center tx-leftLG w-auto h-70vLG">
-                    <h1 class="tx-2rem tx-3remLG">
+                    <h1 class="tx-2rem tx-3remLG ">
                         Otimize seu marketing digital
                         <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
                     </h1>
@@ -1009,6 +1042,8 @@
         const menuOff = $('#menuOff')
         const menuOn = $('#menuOn')
 
+        let scroll = window.scrollY
+
         $('#menuOff').onclick = () => {
             menuOff.style.display = 'none'
             menuOn.style.display = 'block'
@@ -1017,6 +1052,11 @@
         $('#menuOn').onclick = () => {
             menuOff.style.display = 'block'
             menuOn.style.display = 'none'
+        }
+
+        window.onscroll = () => {
+            scroll = window.scrollY
+            console.log(scroll)
         }
     </script>
 </body>
