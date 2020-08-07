@@ -14,3 +14,5 @@ const layout = page('layout')(style)(scripts)
 
 const html = html_beautify(layout, {indent_size: 4 })
 writeFileSync('index.html', html)
+
+console.log('build ok')

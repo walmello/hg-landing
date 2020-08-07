@@ -37,6 +37,9 @@ const elements = {
         .w-15rem {
             width: 15rem;
         }
+        .w-20rem {
+            width: 20rem;
+        }
     `,
     bg: /*css*/`
         .bg-dark-t {
@@ -184,6 +187,9 @@ const elements = {
         }
         .none {
             display: none;
+        }
+        .inline-block {
+            display: inline-block;
         }
     `,
     misc: /*css*/`
