@@ -68,6 +68,11 @@ const elements = {
         .w-auto {
             width: auto;
         }
+        @media(min-width: 1000px){
+            .w-15remLG {
+                width: 15rem;
+            }
+        }
     `,
     bg: /*css*/`
         .bg-dark-t {
@@ -190,6 +195,10 @@ const elements = {
         }
         .p-2rem {
             padding: 2rem;
+        }
+        .px-0 {
+            padding-left: 0;
+            padding-right: 0;
         }
     `,
     pos: /*css*/`

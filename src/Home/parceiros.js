@@ -50,7 +50,15 @@ const imagens = [
 module.exports = /*html*/`
 <section id="autoridade" class="">
     <div>
-        <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
+        <h2 class="tx-2rem tx-center c-dark tx-3remLG">
+            Conheça algumas das 
+            <div>
+            empresas que já alcançaram 
+            </div>
+            <div>
+            resultados incríveis conosco
+            </div>
+            </h2>
         ${imagens}
     </div>
 </section>

@@ -163,6 +163,12 @@
             width: auto;
         }
 
+        @media(min-width: 1000px) {
+            .w-15remLG {
+                width: 15rem;
+            }
+        }
+
         .bg-dark-t {
             background-color: var(--darkt);
         }
@@ -306,6 +312,11 @@
 
         .p-2rem {
             padding: 2rem;
+        }
+
+        .px-0 {
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .fixed {
@@ -499,7 +510,7 @@
                             <div class="w-3rem">
                             </div>
                             <div class="flx bg-dark-t c-white absolute top right p-1rem">
-                                <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
+                                <ul class="ul-none li-p-1rem w-12rem tx-upper tx-bold tx-75">
 
                                     <li>
                                         <a href="#" class="c-white hover-c-primary tx-none">Home</a>
@@ -576,18 +587,19 @@
 
 
             <header id="promessa" class="bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG w-auto h-70vLG">
+                <div class="p-01rem"></div>
                 <h1 class="tx-2rem tx-3remLG ">
                     Otimize seu marketing digital
                     <span class="block c-primary tx-75">e aumente a taxa de conversão do seu negócio</span>
                 </h1>
-                <h2 class="tx-1rem">
+                <h2 class="tx-1rem m-0">
                     Conheça nossas soluções
                     <strong>de marketing</strong> <br> baseadas em
                     <strong>inteligência, otimização e dados.</strong>
                 </h2>
-                <p>
+                <div class="p-1rem px-0">
                     <a class="bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block" href="#">Fale agora mesmo com um especialista</a>
-                </p>
+                </div>
             </header>
 
         </div>
@@ -595,21 +607,23 @@
     <main class="">
 
         <section id="tripwire" class="tx-center tx-leftLG p-2rem">
-            <h2 class="c-primary"><strong class="block tx-3rem c-dark">Seu negócio</strong> foi afetado pela crise?</h2>
-            <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
-            <a class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block" href="#">Quero saber mais</a>
+            <div class="p-2rem">
+                <h2 class="c-primary"><strong class="block tx-3rem c-dark">Seu negócio</strong> foi afetado pela crise?</h2>
+                <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
+                <a class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block" href="#">Quero saber mais</a>
+            </div>
         </section>
 
         <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG flx-grow j-center">
 
             <div class="c-white flx j-center p-1rem">
-                <div class="bg-white c-dark p-1rem">
-                    <img src="static/img/produtos/1.svg" alt="
+                <div class="bg-white c-dark p-1rem tx-center w-15remLG flx flx-col j-between">
+                    <div>
+                        <img src="static/img/produtos/1.svg" alt="
             Ícone nas cores rosa, verde, roxo e azul, 
             de um gráfico de barras crescente, com uma seta acima, 
             com as mesmas cores, indicando o crescimento da performance 
             do seu marketing digital com o serviço de consultoria da HG." class="w-5rem p-1rem">
-                    <div class="tx-center w-15rem">
                         <h3>Consultoria em CRO</h3>
                         <p>
                             Sua taxa crescimento está boa,
@@ -622,6 +636,11 @@
                             entram em ação para fazer um pente fino em
                             <strong>todo o seu processo de vendas</strong>
                         <p>
+                    </div>
+                    <div class="p-1rem">
+                    </div>
+                    <div class="">
+                        <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -660,15 +679,15 @@
     -->
 
             <div class="c-white flx j-center p-1rem">
-                <div class="bg-white c-dark p-1rem">
-                    <img src="static/img/produtos/2.svg" alt="
+                <div class="bg-white c-dark p-1rem tx-center w-15remLG flx flx-col j-between">
+                    <div>
+                        <img src="static/img/produtos/2.svg" alt="
             Ícone de um monitor com um megafone dentro e 
             3 balões de fala acima, nas cores rosa, verde, roxo
             e azul, indicando que sua empresa será conhecida e 
             falada por todos com o nosso serviço de 
             otimização de campanhas de marketing.
         " class="w-5rem p-1rem">
-                    <div class="tx-center w-15rem">
                         <h3>Otimização de campanhas</h3>
                         <p>
                             Suas campanhas no Google e no Facebook estão saindo caro e trazendo pouco retorno?
@@ -678,6 +697,11 @@
                             entram em ação para fazer um pente fino em
                             <strong>todo o seu processo de vendas</strong>
                         <p>
+                    </div>
+                    <div class="p-1rem">
+                    </div>
+                    <div class="">
+                        <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -716,8 +740,9 @@
     -->
 
             <div class="c-white flx j-center p-1rem">
-                <div class="bg-white c-dark p-1rem">
-                    <img src="static/img/produtos/3.svg" alt="
+                <div class="bg-white c-dark p-1rem tx-center w-15remLG flx flx-col j-between">
+                    <div>
+                        <img src="static/img/produtos/3.svg" alt="
             Ícone de um funil na cor roxa, 
             onde na parte de cima há 3 pessoas e na 
             parte de baixo uma moeda rosa com o cifrão, 
@@ -726,7 +751,6 @@
             o seu marketing digital passa a atingir 
             mais pessoas e gerar mais receita.
         " class="w-5rem p-1rem">
-                    <div class="tx-center w-15rem">
                         <h3>CRO e otimização de Testes A/B</h3>
                         <p>
                             Sua taxa crescimento está boa,
@@ -749,6 +773,11 @@
                             Aumente hoje mesmo a escalabilidade de seus negócios!
                             Conheça nosso processo clicando abaixo.
                         <p>
+                    </div>
+                    <div class="p-1rem">
+                    </div>
+                    <div class="">
+                        <a href="#" class="bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -802,7 +831,15 @@
 
         <section id="autoridade" class="">
             <div>
-                <h2>Conheça algumas das empresas que já alcançaram resultados incríveis conosco</h2>
+                <h2 class="tx-2rem tx-center c-dark tx-3remLG">
+                    Conheça algumas das
+                    <div>
+                        empresas que já alcançaram
+                    </div>
+                    <div>
+                        resultados incríveis conosco
+                    </div>
+                </h2>
 
                 <img src="static/img/parceiros/GAMA.svg" alt="
            Gama Academy - Escola altamente reconhecida de 

@@ -32,7 +32,7 @@ const mobile = /*html*/`
         <div class="w-3rem"> 
         </div>
         <div class="flx bg-dark-t c-white absolute top right p-1rem">
-            <ul class="ul-none li-p-1rem w-15rem tx-upper tx-bold tx-75">
+            <ul class="ul-none li-p-1rem w-12rem tx-upper tx-bold tx-75">
                 ${list}
             </ul>
             <img id="menuClose" class="${nav.menu}" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">

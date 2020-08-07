@@ -81,16 +81,21 @@ const produtos = [
     }
 ].map(p => /*html*/`
     <div class="c-white flx j-center p-1rem">
-        <div class="bg-white c-dark p-1rem">
-            <img 
-                src="static/img/produtos/${p.id}.svg" 
-                alt="${p.alt}"
-                class="w-5rem p-1rem"
-            >
-            <div class="tx-center w-15rem">
+        <div class="bg-white c-dark p-1rem tx-center w-15remLG flx flx-col j-between">
+            <div>
+                <img 
+                        src="static/img/produtos/${p.id}.svg" 
+                        alt="${p.alt}"
+                        class="w-5rem p-1rem"
+                    >
                 <h3>${p.title}</h3>
                 ${p.content.map(p => '<p>' + p + '<p>').join('')}
             </div>
+            <div class="p-1rem">
+            </div>
+            <div class="">
+	    	    <a href="#" class="${button_black}">Saiba mais</a>				
+    		</div>
         </div>
     </div>
     <!--
