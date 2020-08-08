@@ -192,6 +192,10 @@ const elements = {
         .m-auto {
             margin: auto;
         }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
     `,
     p: /*css*/`
         .p-0 {
@@ -295,8 +299,11 @@ const elements = {
             justify-content: center;
         }
         .a-center {
-            align-items: center;
+            align-content: center;
         }
+        .a-start {
+            align-content: flex-start;
+        }   
         .flx-wrap {
             flex-wrap: wrap;
         }

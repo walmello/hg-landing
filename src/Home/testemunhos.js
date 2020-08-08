@@ -42,12 +42,12 @@ const testemunhos = [
         content: `… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!`
 	}
 ].map(e => /*html*/`
-    <div class="w-15rem h-100v m-auto">
+    <div class="w-15remLG">
         <div class="p-1rem">
             <img src="${e.img}" alt="${e.alt}"
             class="w-10rem m-auto br-rad-round br-c-dark">
             <h3
-            class="brb-c-dark"
+            class="brb-c-dark mx-auto"
             ><em>${e.nome}</em></h3>
             <h4>${e.titulo}</h4>
             <p>
@@ -58,7 +58,7 @@ const testemunhos = [
 `).join('')
 
 module.exports = /*html*/`
-<section id="depoimentos" class="tx-center">
+<section id="depoimentos" class="tx-center px-10">
     <h2 class="${title}">Veja algumas opiniões de quem já fechou negócio conosco</h2>
         <div class="flxLG j-center">
             ${testemunhos}
