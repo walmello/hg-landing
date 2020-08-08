@@ -1,11 +1,22 @@
 global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block'
 global.button_black = 'bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block'
 global.link = "c-white hover-c-primary tx-none"
+global.container = "px-20"
+global.title = "tx-2rem tx-center c-dark tx-3remLG px-10"
+
 
 const elements = {
+    trans: /*css*/`{
+        .trs-1s {
+            transition: 1s
+        }
+    }`,
     h: /*css*/`
         .h-2rem {
             height: 2rem;
+        }
+        .h-3rem {
+            height: 3rem;
         }
         .h-4rem {
             height: 4rem;
@@ -178,6 +189,9 @@ const elements = {
         .m-1rem {
             margin: 1rem;
         }
+        .m-auto {
+            margin: auto;
+        }
     `,
     p: /*css*/`
         .p-0 {
@@ -200,6 +214,14 @@ const elements = {
             padding-left: 0;
             padding-right: 0;
         }
+        .px-20 {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        .px-10 {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
     `,
     pos: /*css*/`
         .fixed {
@@ -208,6 +230,10 @@ const elements = {
 
         .absolute {
             position: absolute;
+        }
+
+        .relative {
+            position: relative;
         }
 
         .top {
@@ -253,6 +279,9 @@ const elements = {
         .j-center {
             justify-content: center;
         }
+        .j-right {
+            justify-content: right;
+        }
         .j-between {
             justify-content: space-between;
         }
@@ -268,6 +297,9 @@ const elements = {
         .a-center {
             align-items: center;
         }
+        .flx-wrap {
+            flex-wrap: wrap;
+        }
     `,
     br: /*css*/`
         .br-rad-1rem {
@@ -278,6 +310,18 @@ const elements = {
         }
         .brr-c-primary {
             border-right: 5px solid var(--pink);
+        }
+        .br-rad-round {
+            border-radius: 50%;
+        }
+        .br-c-dark {
+            border: 3px solid var(--dark);
+        }
+        .brt-c-dark {
+            border-top: 3px solid var(--dark);
+        }
+        .brb-c-dark {
+            border-bottom: 3px solid var(--dark);
         }
     `,
     li: /*css*/`

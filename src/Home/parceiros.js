@@ -44,7 +44,7 @@ const imagens = [
         `
     }
 ].map(i => /*html*/`
-    <div class="bg-red">
+    <div class="w-15rem p-1rem">
         <img 
             src="static/img/parceiros/${i.img}.svg" 
             alt="${i.alt}"
@@ -54,16 +54,16 @@ const imagens = [
 
 module.exports = /*html*/`
 <section id="autoridade" class="">
-    <div>
-        <h2 class="tx-2rem tx-center c-dark tx-3remLG">
-            Conheça algumas das 
-            <div>
-            empresas que já alcançaram 
-            </div>
-            <div>
-            resultados incríveis conosco
-            </div>
-            </h2>
+    <h2 class="${title}">
+        Conheça algumas das 
+        <div>
+        empresas que já alcançaram 
+        </div>
+        <div>
+        resultados incríveis conosco
+        </div>
+    </h2>
+    <div class="flx flx-wrap j-center">    
         ${imagens}
     </div>
 </section>

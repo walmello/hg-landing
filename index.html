@@ -80,9 +80,18 @@
             font-family: 'Montserrat';
         }
 
+            {
+            .trs-1s {
+                transition: 1s
+            }
+        }
 
         .h-2rem {
             height: 2rem;
+        }
+
+        .h-3rem {
+            height: 3rem;
         }
 
         .h-4rem {
@@ -293,6 +302,10 @@
             margin: 1rem;
         }
 
+        .m-auto {
+            margin: auto;
+        }
+
         .p-0 {
             padding: 0;
         }
@@ -319,12 +332,26 @@
             padding-right: 0;
         }
 
+        .px-20 {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        .px-10 {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
         .fixed {
             position: fixed;
         }
 
         .absolute {
             position: absolute;
+        }
+
+        .relative {
+            position: relative;
         }
 
         .top {
@@ -376,6 +403,10 @@
             justify-content: center;
         }
 
+        .j-right {
+            justify-content: right;
+        }
+
         .j-between {
             justify-content: space-between;
         }
@@ -396,6 +427,10 @@
             align-items: center;
         }
 
+        .flx-wrap {
+            flex-wrap: wrap;
+        }
+
         .br-rad-1rem {
             border-radius: 1rem;
         }
@@ -406,6 +441,22 @@
 
         .brr-c-primary {
             border-right: 5px solid var(--pink);
+        }
+
+        .br-rad-round {
+            border-radius: 50%;
+        }
+
+        .br-c-dark {
+            border: 3px solid var(--dark);
+        }
+
+        .brt-c-dark {
+            border-top: 3px solid var(--dark);
+        }
+
+        .brb-c-dark {
+            border-bottom: 3px solid var(--dark);
         }
 
         .ul-none {
@@ -509,8 +560,8 @@
                         <div id="menuOn" class="none">
                             <div class="w-3rem">
                             </div>
-                            <div class="flx bg-dark-t c-white absolute top right p-1rem">
-                                <ul class="ul-none li-p-1rem w-12rem tx-upper tx-bold tx-75">
+                            <div class="flx j.center bg-dark-t c-white absolute top right p-1rem h-100v">
+                                <ul class="p-0 ul-none li-p-1rem w-12rem tx-upper tx-bold">
 
                                     <li>
                                         <a href="#" class="c-white hover-c-primary tx-none">Home</a>
@@ -529,7 +580,7 @@
                                     </li>
 
                                 </ul>
-                                <img id="menuClose" class="h-100 w-3rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+                                <img id="menuClose" class="w-3rem h-3rem absolute top right p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
                             </div>
                         </div>
 
@@ -606,7 +657,7 @@
     </div>
     <main class="">
 
-        <section id="tripwire" class="tx-center tx-leftLG p-2rem">
+        <section id="tripwire" class="tx-center tx-leftLG px-20">
             <div class="p-2rem">
                 <h2 class="c-primary"><strong class="block tx-3rem c-dark">Seu negócio</strong> foi afetado pela crise?</h2>
                 <p>Conheça nossa <strong>solução</strong> para que você possa retomar o ritmo de crescimento usando otimização de campanhas e marketing de performance</p>
@@ -614,7 +665,7 @@
             </div>
         </section>
 
-        <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG flx-grow j-center">
+        <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG j-center">
 
             <div class="c-white flx j-center p-1rem">
                 <div class="bg-white c-dark p-1rem tx-center w-15remLG flx flx-col j-between">
@@ -830,18 +881,18 @@
         </section>
 
         <section id="autoridade" class="">
-            <div>
-                <h2 class="tx-2rem tx-center c-dark tx-3remLG">
-                    Conheça algumas das
-                    <div>
-                        empresas que já alcançaram
-                    </div>
-                    <div>
-                        resultados incríveis conosco
-                    </div>
-                </h2>
+            <h2 class="tx-2rem tx-center c-dark tx-3remLG px-10">
+                Conheça algumas das
+                <div>
+                    empresas que já alcançaram
+                </div>
+                <div>
+                    resultados incríveis conosco
+                </div>
+            </h2>
+            <div class="flx flx-wrap j-center">
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/GAMA.svg" alt="
            Gama Academy - Escola altamente reconhecida de 
            desenvolvimento profissional para o 
@@ -849,13 +900,13 @@
         ">
                 </div>
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/DISTRITO.svg" alt="
             Distrito - Empresa de inovação e desenvolvimento de Startups
         ">
                 </div>
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/ABSTATUPS.svg" alt="
             AbStartups - Associação Brasileira de Startups 
             visa impulsionar o empreendedorismo tecnológico e 
@@ -863,14 +914,14 @@
         ">
                 </div>
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/VALEDOSOL.svg" alt="
             Vale do Sol - Ecossistema de 
             inovação tecnológica no interior do RJ
         ">
                 </div>
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/RESULTADOS DIGITAIS.svg" alt="
             Resultados Digitais - Empresa altamente reconhecida que 
             oferece serviços de marketing digital para 
@@ -878,7 +929,7 @@
         ">
                 </div>
 
-                <div class="bg-red">
+                <div class="w-15rem p-1rem">
                     <img src="static/img/parceiros/SHAWEE.svg" alt="
             Shawee - Organizadora de Hackathons (maratonas de programação) 
             on-line com mais de 40.000 pessoas impactadas nos últimos 3 anos.
@@ -897,51 +948,67 @@
 
         </section>
 
-        <section id="depoimentos">
-            <h2>Veja algumas opiniões de quem já fechou negócio conosco</h2>
-            <div class="row">
+        <section id="depoimentos" class="tx-center">
+            <h2 class="tx-2rem tx-center c-dark tx-3remLG px-10">Veja algumas opiniões de quem já fechou negócio conosco</h2>
+            <div class="flxLG j-center">
 
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF9npZ0RcFWPw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=cTXYrCJbs1fDaC-JwL4oIPtVT2tF0XFmkE_8hMaGmjM" alt="
+                <div class="w-15rem h-100v m-auto">
+                    <div class="p-1rem">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF9npZ0RcFWPw/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=cTXYrCJbs1fDaC-JwL4oIPtVT2tF0XFmkE_8hMaGmjM" alt="
             Foto de Anderson Kleyton (RevTec - Renomada empresa bioquímica de produtos de limpeza), 
             que está satisfeito com a qualidade dos nossos serviços porque somos diferentes.
-        ">
-                <h3><em>Anderson Kleyton</em></h3>
-                <h4>Inovação Transformação Digital Indústria 4.0 - RevTec</h4>
-                <p>
-                    “… oferece serviços aderentes a necessidade de cada cliente. Em um mercado onde a maioria tenta “empurrar goela baixo” seus produtos, este é um diferencial.”
-                </p>
+        " class="w-10rem m-auto br-rad-round br-c-dark">
+                        <h3 class="brb-c-dark"><em>Anderson Kleyton</em></h3>
+                        <h4>Inovação Transformação Digital Indústria 4.0 - RevTec</h4>
+                        <p>
+                            “… oferece serviços aderentes a necessidade de cada cliente. Em um mercado onde a maioria tenta “empurrar goela baixo” seus produtos, este é um diferencial.”
+                        </p>
+                    </div>
+                </div>
 
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH_9cKznSa8UA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=M_0QkbyNkZo6B0Ne41n9hnj-GcRqtVtPQDbNc4uqkZA" alt="
+                <div class="w-15rem h-100v m-auto">
+                    <div class="p-1rem">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH_9cKznSa8UA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=M_0QkbyNkZo6B0Ne41n9hnj-GcRqtVtPQDbNc4uqkZA" alt="
             Foto de Geisa Luz, que está muito satisfeita com o nosso serviço.
-        ">
-                <h3><em>Geisa Luz</em></h3>
-                <h4>Consultora em Doenças Raras | Palestrante | Pós doutora em Saúde Pública | Enfermeira</h4>
-                <p>
-                    “… Já contratei um dos seus serviços … e os resultados foram surpreendentes. Sou muito grata!”
-                </p>
+        " class="w-10rem m-auto br-rad-round br-c-dark">
+                        <h3 class="brb-c-dark"><em>Geisa Luz</em></h3>
+                        <h4>Consultora em Doenças Raras | Palestrante | Pós doutora em Saúde Pública | Enfermeira</h4>
+                        <p>
+                            “… Já contratei um dos seus serviços … e os resultados foram surpreendentes. Sou muito grata!”
+                        </p>
+                    </div>
+                </div>
 
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEpP8xjQpch_A/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=FmwCLEz8jrjx-arSGIWxHgHb8YQlHOuCv5uuIvm1RiA" alt="
+                <div class="w-15rem h-100v m-auto">
+                    <div class="p-1rem">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEpP8xjQpch_A/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=FmwCLEz8jrjx-arSGIWxHgHb8YQlHOuCv5uuIvm1RiA" alt="
             Foto de Matheus Celestino (Resultados Digitais - Empresa 
             altamente reconhecida que oferece serviços de marketing 
             digital para empresas de todos os portes), 
             que elogia o nosso foco em resultados como 
             uma empresa séria de marketing digital.
-        ">
-                <h3><em>Matheus Celestino</em></h3>
-                <h4>Executivo de Negócios, Resultados Digitais</h4>
-                <p>
-                    “… No inicio de 2019, a Hacking Growth Inovação fechou uma parceria estratégica com a Resultados Digitais, e tive o enorme prazer de fazer essa ponte... Uma empresa totalmente focada em entrega e resultado de seus respectivos clientes. Sempre muito focada naquilo que se propõe a entregar.”
-                </p>
+        " class="w-10rem m-auto br-rad-round br-c-dark">
+                        <h3 class="brb-c-dark"><em>Matheus Celestino</em></h3>
+                        <h4>Executivo de Negócios, Resultados Digitais</h4>
+                        <p>
+                            “… No inicio de 2019, a Hacking Growth Inovação fechou uma parceria estratégica com a Resultados Digitais, e tive o enorme prazer de fazer essa ponte... Uma empresa totalmente focada em entrega e resultado de seus respectivos clientes. Sempre muito focada naquilo que se propõe a entregar.”
+                        </p>
+                    </div>
+                </div>
 
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFWHshtL6DLMA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=TZ66upwy0cLZvBidZdBlGJarJkFmY2jVZ3xAYp18xbY" alt="
+                <div class="w-15rem h-100v m-auto">
+                    <div class="p-1rem">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFWHshtL6DLMA/profile-displayphoto-shrink_200_200/0?e=1600905600&v=beta&t=TZ66upwy0cLZvBidZdBlGJarJkFmY2jVZ3xAYp18xbY" alt="
             Foto de Renata Costa, que está mais do que satisfeita 
             com o que alcançou com nossos serviços como Growth Hackers.
-        ">
-                <h3><em>Renata Costa</em></h3>
-                <h4>Gestora e Consultora de Educação a Distância (EaD) l Professora de Tecnologia da Informação l Conteudista de TI</h4>
-                <p>
-                    “… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!”
-                </p>
+        " class="w-10rem m-auto br-rad-round br-c-dark">
+                        <h3 class="brb-c-dark"><em>Renata Costa</em></h3>
+                        <h4>Gestora e Consultora de Educação a Distância (EaD) l Professora de Tecnologia da Informação l Conteudista de TI</h4>
+                        <p>
+                            “… Excelente sua atuação como Growth Hacker. Nossos diálogos e trocas de informações fizeram o meu SSI decolar!”
+                        </p>
+                    </div>
+                </div>
 
             </div>
             </div>

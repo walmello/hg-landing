@@ -31,11 +31,11 @@ const mobile = /*html*/`
     <div id="menuOn" class="none">
         <div class="w-3rem"> 
         </div>
-        <div class="flx bg-dark-t c-white absolute top right p-1rem">
-            <ul class="ul-none li-p-1rem w-12rem tx-upper tx-bold tx-75">
+        <div class="flx j.center bg-dark-t c-white absolute top right p-1rem h-100v">
+            <ul class="p-0 ul-none li-p-1rem w-12rem tx-upper tx-bold">
                 ${list}
-            </ul>
-            <img id="menuClose" class="${nav.menu}" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+            </ul>        
+            <img id="menuClose" class="w-3rem h-3rem absolute top right p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
         </div>
     </div>          
 `

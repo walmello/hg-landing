@@ -122,7 +122,7 @@ const produtos = [
 `).join('')
 
 module.exports = /*html*/`
-    <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG flx-grow j-center">
+    <section id="product-bundle" class="bg-dark tx-center c-white p-rem flxLG j-center">
         ${produtos}
 	</section>
 `
