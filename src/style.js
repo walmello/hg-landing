@@ -6,11 +6,6 @@ global.title = "tx-2rem tx-center c-dark tx-3remLG px-10"
 
 
 const elements = {
-    trans: /*css*/`{
-        .trs-1s {
-            transition: 1s
-        }
-    }`,
     h: /*css*/`
         .h-2rem {
             height: 2rem;
@@ -226,6 +221,12 @@ const elements = {
             padding-left: 10%;
             padding-right: 10%;
         }
+        @media(min-width: 1000px){
+            .px-20LG {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
     `,
     pos: /*css*/`
         .fixed {
@@ -299,7 +300,7 @@ const elements = {
             justify-content: center;
         }
         .a-center {
-            align-content: center;
+            align-items: center;
         }
         .a-start {
             align-content: flex-start;
@@ -323,6 +324,9 @@ const elements = {
         }
         .br-c-dark {
             border: 3px solid var(--dark);
+        }
+        .br-c-primary {
+            border: 3px solid var(--pink);
         }
         .brt-c-dark {
             border-top: 3px solid var(--dark);
@@ -366,10 +370,10 @@ const elements = {
     misc: /*css*/`
         .brd-box {
             box-sizing: border-box;
-        },
+        }
         .cursor {
             cursor: pointer;
-        },
+        }
         .box {
             width: 3rem;
             height: 3rem;

@@ -23,3 +23,15 @@ window.onscroll = () => {
         $('#sticky').style.display = 'none'
     }
 }
+
+function openFaq(id){
+    $('#faq-close-'+id).style.display = 'block'
+    $('#faq-open-'+id).style.display = 'none'
+    $('#faq-content-'+id).style.display = 'block'
+}
+
+function closeFaq(id){
+    $('#faq-open-'+id).style.display = 'block'
+    $('#faq-close-'+id).style.display = 'none'
+    $('#faq-content-'+id).style.display = 'none'
+}

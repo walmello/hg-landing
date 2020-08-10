@@ -183,15 +183,29 @@ const faq = [
             Taxa de Conversão desta página é de 20%.`
         ]
     },
-].map(e => /*html*/`
-    <dt>${e.title}</dt>
-    <dd>
-        ${e.content.map(i => "<p>" + i +"<p>").join('')}
-    </dd>
+].map((e,i) => /*html*/`
+    <div class="p-1rem">
+        <div class="br-c-primary tx-2rem p-1rem">
+            <dt class="tx-bold flx a-center j-between">
+                <div class="w-100">
+                    ${e.title} 
+                </div>
+                <div class="cursor" id="faq-open-${i}" onclick="openFaq(${i})">
+                    <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o ${i}º item do faq">
+                </div>
+                <div class="cursor none" id="faq-close-${i}" onclick="closeFaq(${i})">
+                    <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o ${i}º item do faq">
+                </div>
+            </dt>
+            <dd class="m-0 tx-75 none" id="faq-content-${i}">
+                ${e.content.map(i => "<p>" + i +"<p>").join('')}
+            </dd>
+        </div>
+    </div>
 `).join('')
 
 module.exports = /*html*/`
-<section id="faq">
+<section id="faq" class="tx-center bg-dark c-white p-1rem px-20LG">
     <dl>
         ${faq}
     </dl>
