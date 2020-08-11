@@ -416,7 +416,7 @@ const elements = {
 module.exports = `
     ${Object.keys(elements).map(el => elements[el]).join(' ')}
 
-    textarea:focus, input:focus, select:focus{
+    textarea:focus, input:focus, select:focus, button:focus {
         outline: none;
         border-bottom: 3px solid var(--blue);
     }

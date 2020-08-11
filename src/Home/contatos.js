@@ -32,7 +32,7 @@ module.exports = /*html*/`
         </div>
         <div class="flx j-between px-1rem">
             <div></div>
-            <button type="submit" class="br-none bg-dark c-white br-rad-05rem p-1rem tx-1rem w-8rem tx-upper tx-bold">Enviar</button>
+            <button type="submit" class="cursor br-none bg-dark c-white br-rad-05rem p-1rem tx-1rem w-8rem tx-upper tx-bold">Enviar</button>
         </div>
     </form>
     </section>
