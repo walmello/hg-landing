@@ -97,28 +97,24 @@ const elements = {
             background-color: red;
         }
         .bg-header {
-            background: url('static/img/bg/header.svg');
+            background: url('static/img/bg/header-sm.svg');
             background-repeat: no-repeat;
-            background-position: bottom right;
+            background-position: bottom center;
+            background-size: 100vh;
         }
         
         .bg-primary {
             background-color: var(--pink);
         }
-        @media(min-width: 500px){
-            .bg-header {
-                
-            }    
-            
-        }
 
         @media(min-width: 1000px){
-            .bg-header {
-                
-            }    
             .bg-trip {
                 background: url('static/img/bg/tripwire.jpg');
                 background-size: 100%;
+            }
+
+            .bg-header {            
+                background-position: bottom right;
             }
         }
     `,
