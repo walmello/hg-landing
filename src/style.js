@@ -1,4 +1,4 @@
-global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block'
+global.button = 'bg-white p-1rem tx-1rem br-rad-1rem c-dark tx-d-none tx-bold w-12rem inline-block hover-c-primary'
 global.button_black = 'bg-dark p-1rem tx-1rem br-rad-1rem c-white tx-d-none tx-bold w-10rem inline-block'
 global.link = "c-white hover-c-primary tx-none"
 global.container = "px-20"
@@ -107,6 +107,10 @@ const elements = {
             background-color: var(--pink);
         }
 
+        .bg-primary-hover:hover {
+
+        }
+
         @media(min-width: 1000px){
             .bg-trip {
                 background: url('static/img/bg/tripwire.jpg');
@@ -116,6 +120,7 @@ const elements = {
             .bg-header {            
                 background-position: bottom right;
             }
+
         }
     `,
     c: /*css*/`
