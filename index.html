@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacking Growth</title>
-    <link rel="icon" href="hg.png">
+    <link rel="icon" href="static/img/hg.svg">
     <!-- Google Tag Manager -->
     <!--
         <script>
@@ -369,6 +369,10 @@
             right: 0;
         }
 
+        .right-1rem {
+            right: 1rem;
+        }
+
         .bottom {
             bottom: 0;
         }
@@ -569,7 +573,7 @@
                         <div class="w-3rem">
                         </div>
                         <img class="h-100" src="static/img/hg.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-                        <img id="menuOff" class="h-100 w-3rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+                        <img id="menuOff" class="h-100 w-3rem relative right-1rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
                         <div id="menuOn" class="none">
                             <div class="w-3rem">
                             </div>
@@ -593,7 +597,7 @@
                                     </li>
 
                                 </ul>
-                                <img id="menuClose" class="w-3rem h-3rem absolute top right p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+                                <img id="menuClose" class="w-3rem h-3rem absolute top right-1rem p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
                             </div>
                         </div>
 
@@ -1036,10 +1040,10 @@
                             <div class="w-100">
                                 O que é Taxa de Conversão?
                             </div>
-                            <div class="cursor" id="faq-open-0" onclick="openFaq(0)">
+                            <div class="cursor" id="faq-open-0" onclick="toggleFaq(0)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 0º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-0" onclick="closeFaq(0)">
+                            <div class="cursor none" id="faq-close-0" onclick="toggleFaq(0)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 0º item do faq">
                             </div>
                         </div>
@@ -1063,10 +1067,10 @@
                             <div class="w-100">
                                 O que é CRO?
                             </div>
-                            <div class="cursor" id="faq-open-1" onclick="openFaq(1)">
+                            <div class="cursor" id="faq-open-1" onclick="toggleFaq(1)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 1º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-1" onclick="closeFaq(1)">
+                            <div class="cursor none" id="faq-close-1" onclick="toggleFaq(1)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 1º item do faq">
                             </div>
                         </div>
@@ -1095,10 +1099,10 @@
                             <div class="w-100">
                                 Quais são as etapas da Otimização da Taxa de Conversão?
                             </div>
-                            <div class="cursor" id="faq-open-2" onclick="openFaq(2)">
+                            <div class="cursor" id="faq-open-2" onclick="toggleFaq(2)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 2º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-2" onclick="closeFaq(2)">
+                            <div class="cursor none" id="faq-close-2" onclick="toggleFaq(2)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 2º item do faq">
                             </div>
                         </div>
@@ -1124,10 +1128,10 @@
                             <div class="w-100">
                                 O que é Teste A/B?
                             </div>
-                            <div class="cursor" id="faq-open-3" onclick="openFaq(3)">
+                            <div class="cursor" id="faq-open-3" onclick="toggleFaq(3)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 3º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-3" onclick="closeFaq(3)">
+                            <div class="cursor none" id="faq-close-3" onclick="toggleFaq(3)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 3º item do faq">
                             </div>
                         </div>
@@ -1156,10 +1160,10 @@
                             <div class="w-100">
                                 O que é Growth Hacking?
                             </div>
-                            <div class="cursor" id="faq-open-4" onclick="openFaq(4)">
+                            <div class="cursor" id="faq-open-4" onclick="toggleFaq(4)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 4º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-4" onclick="closeFaq(4)">
+                            <div class="cursor none" id="faq-close-4" onclick="toggleFaq(4)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 4º item do faq">
                             </div>
                         </div>
@@ -1183,10 +1187,10 @@
                             <div class="w-100">
                                 Por que devo fazer a CRO?
                             </div>
-                            <div class="cursor" id="faq-open-5" onclick="openFaq(5)">
+                            <div class="cursor" id="faq-open-5" onclick="toggleFaq(5)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 5º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-5" onclick="closeFaq(5)">
+                            <div class="cursor none" id="faq-close-5" onclick="toggleFaq(5)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 5º item do faq">
                             </div>
                         </div>
@@ -1218,10 +1222,10 @@
                             <div class="w-100">
                                 Quando devo investir em CRO?
                             </div>
-                            <div class="cursor" id="faq-open-6" onclick="openFaq(6)">
+                            <div class="cursor" id="faq-open-6" onclick="toggleFaq(6)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 6º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-6" onclick="closeFaq(6)">
+                            <div class="cursor none" id="faq-close-6" onclick="toggleFaq(6)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 6º item do faq">
                             </div>
                         </div>
@@ -1259,10 +1263,10 @@
                             <div class="w-100">
                                 Como faço para me tornar cliente da Hacking Growth?
                             </div>
-                            <div class="cursor" id="faq-open-7" onclick="openFaq(7)">
+                            <div class="cursor" id="faq-open-7" onclick="toggleFaq(7)">
                                 <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 7º item do faq">
                             </div>
-                            <div class="cursor none" id="faq-close-7" onclick="closeFaq(7)">
+                            <div class="cursor none" id="faq-close-7" onclick="toggleFaq(7)">
                                 <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 7º item do faq">
                             </div>
                         </div>
@@ -1294,89 +1298,10 @@
                     </div>
                 </div>
 
-                <div class="p-1rem">
-                    <div class="br-c-primary tx-2rem p-1rem">
-                        <div class="tx-bold flx a-center j-between">
-                            <div class="w-100">
-                                O que é Taxa de Conversão?
-                            </div>
-                            <div class="cursor" id="faq-open-8" onclick="openFaq(8)">
-                                <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 8º item do faq">
-                            </div>
-                            <div class="cursor none" id="faq-close-8" onclick="closeFaq(8)">
-                                <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 8º item do faq">
-                            </div>
-                        </div>
-                        <div class="m-0 tx-75 none" id="faq-content-8">
-                            <p>
-                                Diferente da Taxa de Cliques (CTR) de uma página,
-                                a taxa de conversão expressa, em porcentagem,
-                                os visitantes que executaram a ação desejada na página.
-                                Por exemplo: Uma página tem o objetivo de vender um produto
-                                e recebe mensalmente 100 visitas. Destas 100 visitas,
-                                20 compraram o produto, logo, a
-                                Taxa de Conversão desta página é de 20%.
-                            <p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-1rem">
-                    <div class="br-c-primary tx-2rem p-1rem">
-                        <div class="tx-bold flx a-center j-between">
-                            <div class="w-100">
-                                O que é Taxa de Conversão?
-                            </div>
-                            <div class="cursor" id="faq-open-9" onclick="openFaq(9)">
-                                <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 9º item do faq">
-                            </div>
-                            <div class="cursor none" id="faq-close-9" onclick="closeFaq(9)">
-                                <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 9º item do faq">
-                            </div>
-                        </div>
-                        <div class="m-0 tx-75 none" id="faq-content-9">
-                            <p>
-                                Diferente da Taxa de Cliques (CTR) de uma página,
-                                a taxa de conversão expressa, em porcentagem,
-                                os visitantes que executaram a ação desejada na página.
-                                Por exemplo: Uma página tem o objetivo de vender um produto
-                                e recebe mensalmente 100 visitas. Destas 100 visitas,
-                                20 compraram o produto, logo, a
-                                Taxa de Conversão desta página é de 20%.
-                            <p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-1rem">
-                    <div class="br-c-primary tx-2rem p-1rem">
-                        <div class="tx-bold flx a-center j-between">
-                            <div class="w-100">
-                                O que é Taxa de Conversão?
-                            </div>
-                            <div class="cursor" id="faq-open-10" onclick="openFaq(10)">
-                                <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 10º item do faq">
-                            </div>
-                            <div class="cursor none" id="faq-close-10" onclick="closeFaq(10)">
-                                <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o 10º item do faq">
-                            </div>
-                        </div>
-                        <div class="m-0 tx-75 none" id="faq-content-10">
-                            <p>
-                                Diferente da Taxa de Cliques (CTR) de uma página,
-                                a taxa de conversão expressa, em porcentagem,
-                                os visitantes que executaram a ação desejada na página.
-                                Por exemplo: Uma página tem o objetivo de vender um produto
-                                e recebe mensalmente 100 visitas. Destas 100 visitas,
-                                20 compraram o produto, logo, a
-                                Taxa de Conversão desta página é de 20%.
-                            <p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
+
+        form de contato
 
     </main>
 
@@ -1388,40 +1313,27 @@
     <script>
         $ = query => document.querySelector(query)
 
-        const menuOff = $('#menuOff')
-        const menuOn = $('#menuOn')
+        $('#menuOff').onclick = () => toggleMenu()
+        $('#menuOn').onclick = () => toggleMenu()
 
-        let scroll = window.scrollY
-
-        $('#menuOff').onclick = () => {
-            menuOff.style.display = 'none'
-            menuOn.style.display = 'block'
-        }
-
-        $('#menuClose').onclick = () => {
-            menuOff.style.display = 'block'
-            menuOn.style.display = 'none'
+        function toggleMenu() {
+            $('#menuOff').classList.toggle('none')
+            $('#menuOn').classList.toggle('none')
         }
 
         window.onscroll = () => {
-            scroll = window.scrollY
+            let scroll = window.scrollY
             if (scroll > 150) {
-                $('#sticky').style.display = 'block'
+                $('#sticky').classList.remove('none')
             } else {
-                $('#sticky').style.display = 'none'
+                $('#sticky').classList.add('none')
             }
         }
 
-        function openFaq(id) {
-            $('#faq-close-' + id).style.display = 'block'
-            $('#faq-open-' + id).style.display = 'none'
-            $('#faq-content-' + id).style.display = 'block'
-        }
-
-        function closeFaq(id) {
-            $('#faq-open-' + id).style.display = 'block'
-            $('#faq-close-' + id).style.display = 'none'
-            $('#faq-content-' + id).style.display = 'none'
+        function toggleFaq(id) {
+            $('#faq-open-' + id).classList.toggle('none')
+            $('#faq-close-' + id).classList.toggle('none')
+            $('#faq-content-' + id).classList.toggle('none')
         }
     </script>
 </body>

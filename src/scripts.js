@@ -1,37 +1,24 @@
 $ = query => document.querySelector(query)
 
-const menuOff = $('#menuOff')
-const menuOn = $('#menuOn')
+$('#menuOff').onclick = () => toggleMenu()
+$('#menuOn').onclick = () => toggleMenu()
 
-let scroll = window.scrollY
-
-$('#menuOff').onclick = () => {
-    menuOff.style.display = 'none'
-    menuOn.style.display = 'block'
-}
-
-$('#menuClose').onclick = () => {
-    menuOff.style.display = 'block'
-    menuOn.style.display = 'none'
+function toggleMenu(){
+    $('#menuOff').classList.toggle('none')
+    $('#menuOn').classList.toggle('none')
 }
 
 window.onscroll = () => {
-    scroll = window.scrollY
+    let scroll = window.scrollY
     if(scroll > 150){
-        $('#sticky').style.display = 'block'
+        $('#sticky').classList.remove('none')
     } else {
-        $('#sticky').style.display = 'none'
+        $('#sticky').classList.add('none')
     }
 }
 
-function openFaq(id){
-    $('#faq-close-'+id).style.display = 'block'
-    $('#faq-open-'+id).style.display = 'none'
-    $('#faq-content-'+id).style.display = 'block'
-}
-
-function closeFaq(id){
-    $('#faq-open-'+id).style.display = 'block'
-    $('#faq-close-'+id).style.display = 'none'
-    $('#faq-content-'+id).style.display = 'none'
+function toggleFaq(id){
+    $('#faq-open-'+id).classList.toggle('none')
+    $('#faq-close-'+id).classList.toggle('none')
+    $('#faq-content-'+id).classList.toggle('none')
 }

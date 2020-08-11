@@ -5,7 +5,7 @@ module.exports = style => scripts => /*html*/`
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hacking Growth</title>
-        <link rel="icon" href="hg.png">
+        <link rel="icon" href="static/img/hg.svg">
         <!-- Google Tag Manager -->
         <!--
         <script>

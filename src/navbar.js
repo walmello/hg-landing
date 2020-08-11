@@ -27,7 +27,7 @@ const mobile = /*html*/`
     <div class="w-3rem"> 
     </div>
     <img class="${nav.logo}" src="static/img/hg.svg" alt="Logotipo moderno da Hacking Growth: Letras H e G conectadas em formato triangular com preenchimento em degradê nas cores rosa, roxo e azul.">
-    <img id="menuOff" class="${nav.menu}" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
+    <img id="menuOff" class="h-100 w-3rem relative right-1rem" src="static/img/menu.svg" alt="Ícone do menu com 3 linhas rosas.">
     <div id="menuOn" class="none">
         <div class="w-3rem"> 
         </div>
@@ -35,7 +35,7 @@ const mobile = /*html*/`
             <ul class="p-0 ul-none li-p-1rem w-12rem tx-upper tx-bold">
                 ${list}
             </ul>        
-            <img id="menuClose" class="w-3rem h-3rem absolute top right p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
+            <img id="menuClose" class="w-3rem h-3rem absolute top right-1rem p-05rem" src="static/img/x.svg" alt="Ícone do menu com 3 linhas rosas.">
         </div>
     </div>          
 `

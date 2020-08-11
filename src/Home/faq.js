@@ -147,42 +147,6 @@ const faq = [
         `
         ]
     },
-    {
-		title: 'O que é Taxa de Conversão?',
-        content: [`
-            Diferente da Taxa de Cliques (CTR) de uma página, 
-            a taxa de conversão expressa, em porcentagem, 
-            os visitantes que executaram a ação desejada na página. 
-            Por exemplo: Uma página tem o objetivo de vender um produto 
-            e recebe mensalmente 100 visitas. Destas 100 visitas, 
-            20 compraram o produto, logo, a 
-            Taxa de Conversão desta página é de 20%.`
-        ]
-    },
-    {
-		title: 'O que é Taxa de Conversão?',
-        content: [`
-            Diferente da Taxa de Cliques (CTR) de uma página, 
-            a taxa de conversão expressa, em porcentagem, 
-            os visitantes que executaram a ação desejada na página. 
-            Por exemplo: Uma página tem o objetivo de vender um produto 
-            e recebe mensalmente 100 visitas. Destas 100 visitas, 
-            20 compraram o produto, logo, a 
-            Taxa de Conversão desta página é de 20%.`
-        ]
-    },
-    {
-		title: 'O que é Taxa de Conversão?',
-        content: [`
-            Diferente da Taxa de Cliques (CTR) de uma página, 
-            a taxa de conversão expressa, em porcentagem, 
-            os visitantes que executaram a ação desejada na página. 
-            Por exemplo: Uma página tem o objetivo de vender um produto 
-            e recebe mensalmente 100 visitas. Destas 100 visitas, 
-            20 compraram o produto, logo, a 
-            Taxa de Conversão desta página é de 20%.`
-        ]
-    },
 ].map((e,i) => /*html*/`
     <div class="p-1rem">
         <div class="br-c-primary tx-2rem p-1rem">
@@ -190,10 +154,10 @@ const faq = [
                 <div class="w-100">
                     ${e.title} 
                 </div>
-                <div class="cursor" id="faq-open-${i}" onclick="openFaq(${i})">
+                <div class="cursor" id="faq-open-${i}" onclick="toggleFaq(${i})">
                     <img src="static/img/faq/+.svg" class="h-100 w-2rem" alt="imagem de + para abrir o ${i}º item do faq">
                 </div>
-                <div class="cursor none" id="faq-close-${i}" onclick="closeFaq(${i})">
+                <div class="cursor none" id="faq-close-${i}" onclick="toggleFaq(${i})">
                     <img src="static/img/faq/-.svg" class="h-100 w-2rem" alt="imagem de + para abrir o ${i}º item do faq">
                 </div>
             </div>

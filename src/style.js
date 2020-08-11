@@ -249,6 +249,10 @@ const elements = {
             right: 0;
         }
 
+        .right-1rem {
+            right: 1rem;
+        }
+
         .bottom {
             bottom: 0;
         }

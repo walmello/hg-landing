@@ -5,7 +5,8 @@ const Homepages = pages(
     'parceiros',
     'contadores',
     'testemunhos',
-    'faq'
+    'faq',
+    'contatos'
 )
 
 module.exports = /*html*/`
