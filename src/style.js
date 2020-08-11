@@ -221,10 +221,20 @@ const elements = {
             padding-left: 10%;
             padding-right: 10%;
         }
+        @media(min-width: 700px){
+            .px-20MD {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
         @media(min-width: 1000px){
             .px-20LG {
                 padding-left: 20%;
                 padding-right: 20%;
+            }
+            .px-30LG {
+                padding-left: 30%;
+                padding-right: 30%;
             }
         }
     `,
@@ -317,6 +327,9 @@ const elements = {
         .br-rad-1rem {
             border-radius: 1rem;
         }
+        .br-rad-05rem {
+            border-radius: 0.5rem;
+        }
         .brt-c-primary {
             border-top: 5px solid var(--pink);
         }
@@ -332,11 +345,26 @@ const elements = {
         .br-c-primary {
             border: 3px solid var(--pink);
         }
+        .brb-c-primary {
+            border-bottom: 3px solid var(--pink);
+        }
         .brt-c-dark {
             border-top: 3px solid var(--dark);
         }
         .brb-c-dark {
             border-bottom: 3px solid var(--dark);
+        }
+        .brl-none {
+            border-left: none;
+        }
+        .brt-none {
+            border-top: none;
+        }
+        .brr-none {
+            border-right: none;
+        }
+        .br-none {
+            border: none;
         }
     `,
     li: /*css*/`
@@ -387,4 +415,9 @@ const elements = {
 
 module.exports = `
     ${Object.keys(elements).map(el => elements[el]).join(' ')}
+
+    textarea:focus, input:focus, select:focus{
+        outline: none;
+        border-bottom: 3px solid var(--blue);
+    }
 `

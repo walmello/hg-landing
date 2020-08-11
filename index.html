@@ -342,10 +342,22 @@
             padding-right: 10%;
         }
 
+        @media(min-width: 700px) {
+            .px-20MD {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+
         @media(min-width: 1000px) {
             .px-20LG {
                 padding-left: 20%;
                 padding-right: 20%;
+            }
+
+            .px-30LG {
+                padding-left: 30%;
+                padding-right: 30%;
             }
         }
 
@@ -450,6 +462,10 @@
             border-radius: 1rem;
         }
 
+        .br-rad-05rem {
+            border-radius: 0.5rem;
+        }
+
         .brt-c-primary {
             border-top: 5px solid var(--pink);
         }
@@ -470,12 +486,32 @@
             border: 3px solid var(--pink);
         }
 
+        .brb-c-primary {
+            border-bottom: 3px solid var(--pink);
+        }
+
         .brt-c-dark {
             border-top: 3px solid var(--dark);
         }
 
         .brb-c-dark {
             border-bottom: 3px solid var(--dark);
+        }
+
+        .brl-none {
+            border-left: none;
+        }
+
+        .brt-none {
+            border-top: none;
+        }
+
+        .brr-none {
+            border-right: none;
+        }
+
+        .br-none {
+            border: none;
         }
 
         .ul-none {
@@ -522,6 +558,14 @@
             width: 3rem;
             height: 3rem;
         }
+
+
+        textarea:focus,
+        input:focus,
+        select:focus {
+            outline: none;
+            border-bottom: 3px solid var(--blue);
+        }
     </style>
 </head>
 
@@ -548,9 +592,15 @@
                 <div class="desktop">
                     <ul class="ul-none h-100 flx flx-col j-around li-rotate m-0 tx-bold">
                         <div></div>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
+                        <li>
+                            <a class="c-white hover-c-primary tx-none">Linkedin</a>
+                        </li>
+                        <li>
+                            <a class="c-white hover-c-primary tx-none">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="c-white hover-c-primary tx-none">Facebook</a>
+                        </li>
                         <div></div>
                     </ul>
                 </div>
@@ -1028,7 +1078,6 @@
                 </div>
 
             </div>
-            </div>
         </section>
 
         <section id="faq" class="tx-center bg-dark c-white p-1rem px-20LG">
@@ -1301,11 +1350,44 @@
             </div>
         </section>
 
-        form de contato
+        <section id="opt-in" class="p-1rem px-10">
+            <h2 class="tx-2rem tx-center c-dark tx-3remLG px-10">Comece agora mesmo a traçar o sucesso do seu negócio</h2>
+            <form class="tx-2rem p-1rem px-20LG px-20MD">
+                <div class="p-1rem tx-75">
+                    <label class="c-dark tx-bold tx-upper">Nome</label><br />
+                    <input class="brl-none brt-none brr-none brb-c-primary w-100 tx-75">
+                </div>
+                <div class="p-1rem tx-75">
+                    <label class="c-dark tx-bold tx-upper">Email</label><br />
+                    <input class="brl-none brt-none brr-none brb-c-primary w-100 tx-75">
+                </div>
+                <div class="p-1rem tx-75">
+                    <label class="c-dark tx-bold tx-upper">Nome da empresa</label><br />
+                    <input class="brl-none brt-none brr-none brb-c-primary w-100 tx-75">
+                </div>
+                <div class="p-1rem tx-75">
+                    <label class="c-dark tx-bold tx-upper">Quanto investe em marketing atualmente?</label><br />
+                    <select class="brl-none brt-none brr-none brb-c-primary w-100 tx-75" name="" id="">
+                        <option value="">R$ 3.000,00 a R$ 5.000,00</option>
+                        <option value="">R$ 5.000,00 a R$ 10.000,00</option>
+                        <option value="">R$ 10.000,00 a R$ 25.000,00</option>
+                        <option value="">Mais de R$ 25.000,00</option>
+                    </select>
+                </div>
+                <div class="p-1rem tx-75">
+                    <label class="c-dark tx-bold tx-upper">Mensagem</label><br />
+                    <textarea class="brl-none brt-none brr-none brb-c-primary w-100 tx-75 h-4rem" style="margin-bottom: -2px"></textarea><br />
+                </div>
+                <div class="flx j-between px-1rem">
+                    <div></div>
+                    <button type="submit" class="br-none bg-primary c-white br-rad-05rem p-1rem tx-1rem w-8rem tx-upper tx-bold">Enviar</button>
+                </div>
+            </form>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="bg-dark p-2rem tx-center c-white tx-upper">
         © 2020 Hacking Growth Inovação. Todos os direitos reservados. Desenvolvido por Hacking Growth Inovação
     </footer>
 

@@ -10,9 +10,15 @@ module.exports = /*html*/`
         <div class="desktop">
             <ul class="ul-none h-100 flx flx-col j-around li-rotate m-0 tx-bold">
                 <div></div>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Linkedin</li>
+                <li>
+                    <a class="${link}">Linkedin</a>
+                </li>                
+                <li>
+                    <a class="${link}">Instagram</a>
+                </li>                
+                <li>
+                    <a class="${link}">Facebook</a>
+                </li>
                 <div></div>
             </ul>
         </div>

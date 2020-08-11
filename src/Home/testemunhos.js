@@ -63,6 +63,5 @@ module.exports = /*html*/`
         <div class="flxLG j-center">
             ${testemunhos}
         </div>
-    </div>
 </section>
 `
