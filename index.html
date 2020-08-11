@@ -51,7 +51,7 @@
             --violet: #7958C3;
             --blue: #06B3F5;
             --light: #eee;
-            --dark: #092342;
+            --dark: #19344f;
             --darkt: #092342dd;
             --gradient: linear-gradient(to right, var(--pink), var(--cyan), var(--violet), var(--blue));
         }
@@ -78,6 +78,12 @@
 
         html {
             font-family: 'Montserrat';
+        }
+
+        @media(min-width: 2000px) {
+            html {
+                font-size: 2rem;
+            }
         }
 
 
@@ -198,6 +204,10 @@
             background-repeat: no-repeat;
             background-position: bottom center;
             background-size: 100vh;
+        }
+
+        .bg-violet {
+            background-color: var(--violet);
         }
 
         .bg-primary {

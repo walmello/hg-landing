@@ -102,6 +102,10 @@ const elements = {
             background-position: bottom center;
             background-size: 100vh;
         }
+
+        .bg-violet {
+            background-color: var(--violet);
+        }
         
         .bg-primary {
             background-color: var(--pink);
