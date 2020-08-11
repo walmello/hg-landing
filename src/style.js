@@ -84,6 +84,9 @@ const elements = {
         .bg-dark-t {
             background-color: var(--darkt);
         }        
+        .bg-none {
+            background-color: transparent;
+        }
         .bg-dark {
             background-color: var(--dark);
         }
@@ -98,6 +101,7 @@ const elements = {
             background-size: 300vw;
             background-position: 65%;
         }
+        
         .bg-primary {
             background-color: var(--pink);
         }
@@ -106,6 +110,7 @@ const elements = {
                 background-size: 150vw;
                 background-position: 50%;
             }    
+            
         }
 
         @media(min-width: 1000px){
@@ -113,6 +118,10 @@ const elements = {
                 background-size: 120vw;
                 background-position: 0;
             }    
+            .bg-trip {
+                background: url('static/img/bg/tripwire.jpg');
+                background-size: 100%;
+            }
         }
     `,
     c: /*css*/`

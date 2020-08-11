@@ -3,7 +3,6 @@ const Homepages = pages(
     'tripwire',
     'produtos',
     'parceiros',
-    'contadores',
     'testemunhos',
     'faq',
     'contatos'
