@@ -194,9 +194,9 @@
         }
 
         .bg-header {
-            background: url('static/img/bg/header.jpg');
-            background-size: 300vw;
-            background-position: 65%;
+            background: url('static/img/bg/header.svg');
+            background-repeat: no-repeat;
+            background-position: bottom right;
         }
 
         .bg-primary {
@@ -204,18 +204,12 @@
         }
 
         @media(min-width: 500px) {
-            .bg-header {
-                background-size: 150vw;
-                background-position: 50%;
-            }
+            .bg-header {}
 
         }
 
         @media(min-width: 1000px) {
-            .bg-header {
-                background-size: 120vw;
-                background-position: 0;
-            }
+            .bg-header {}
 
             .bg-trip {
                 background: url('static/img/bg/tripwire.jpg');
@@ -721,7 +715,7 @@
             </nav>
 
 
-            <header id="promessa" class="bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG w-auto h-70vLG">
+            <header id="promessa" class="bg-header bg-dark c-white flx flx-col j-center h-85v p-2rem tx-center tx-leftLG w-auto h-70vLG">
                 <div class="p-01rem"></div>
                 <h1 class="tx-2rem tx-3remLG ">
                     Otimize seu marketing digital

@@ -97,9 +97,9 @@ const elements = {
             background-color: red;
         }
         .bg-header {
-            background: url('static/img/bg/header.jpg');
-            background-size: 300vw;
-            background-position: 65%;
+            background: url('static/img/bg/header.svg');
+            background-repeat: no-repeat;
+            background-position: bottom right;
         }
         
         .bg-primary {
@@ -107,16 +107,14 @@ const elements = {
         }
         @media(min-width: 500px){
             .bg-header {
-                background-size: 150vw;
-                background-position: 50%;
+                
             }    
             
         }
 
         @media(min-width: 1000px){
             .bg-header {
-                background-size: 120vw;
-                background-position: 0;
+                
             }    
             .bg-trip {
                 background: url('static/img/bg/tripwire.jpg');
