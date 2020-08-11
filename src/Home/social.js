@@ -3,15 +3,18 @@ module.exports = /*html*/`
         <div class="mobile">
             <ul class="h-4rem m-0 bg-dark fixed w-100v p-05rem bottom flx j-around a-center ul-none brd-box brt-c-primary c-white">
                 <li>
-                    <a class="${link}" href="#">
-                        <img src="static/img/facebook.svg">
-                    </a>
+                    <a href="#">
+                       <img src="static/img/facebook.svg" class="h-2rem">
+                    </a>                                
                 </li>                
                 <li>
-                    <a class="${link}"  href="#">L</a>
-                </li>                
+                    <a href="#">
+                        <img src="static/img/instagram.svg" class="h-2rem">
+                    </a>                
                 <li>
-                    <a class="${link}"  href="#">T</a>
+                    <a href="#">
+                        <img src="static/img/linkedin.svg" class="h-2rem">
+                    </a>                
                 </li>
             </ul>
         </div>
