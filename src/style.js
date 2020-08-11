@@ -97,7 +97,7 @@ const elements = {
             background-color: red;
         }
         .bg-header {
-            background: url('static/img/bg/header-sm.svg');
+            background: url('static/img/bg/header.png');
             background-repeat: no-repeat;
             background-position: bottom center;
             background-size: 100vh;
